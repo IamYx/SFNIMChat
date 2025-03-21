@@ -63,6 +63,8 @@ class ConversationModel: NSObject {
             return prefix + "[提示消息]"
         case .custom:
             return prefix + "[自定义消息]"
+        case .rtcCallRecord:
+            return prefix + "[音视频通话]"
         default:
             return prefix + "[未知消息]"
         }

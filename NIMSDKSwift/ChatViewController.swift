@@ -4,6 +4,7 @@ class ChatViewController: UIViewController {
     
     var model : ConversationModel
     var msgModels: [MessageModel] = []
+    private var inputContainerBottomConstraint: NSLayoutConstraint!
     
     init(model: ConversationModel) {
         self.model = model
@@ -24,13 +25,9 @@ class ChatViewController: UIViewController {
         tv.register(TextMessageCellTableViewCell.self, forCellReuseIdentifier: "MessageCell")
         tv.register(ImageMessageCellTableViewCell.self, forCellReuseIdentifier: "ImgMessageCell")
         tv.separatorStyle = .none
-        tv.allowsSelection = false
+        tv.allowsSelection = true
         tv.dataSource = self
         tv.delegate = self
-        
-        // 添加点击手势
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTableViewTap))
-        tv.addGestureRecognizer(tapGesture)
         
         // 修正下拉刷新方向
         let refreshControl = UIRefreshControl()
@@ -52,22 +49,30 @@ class ChatViewController: UIViewController {
         return view
     }()
     
+    // 新增按钮堆栈视图
+    private lazy var buttonStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.distribution = .fillEqually
+        stack.spacing = 12
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
+    // 新增四个功能按钮
+    private lazy var imageButton: UIButton = createSystemIconButton(systemName: "photo", action: #selector(selectImage))
+    private lazy var voiceButton: UIButton = createSystemIconButton(systemName: "mic", action: #selector(sendVoice))
+    private lazy var videoCallButton: UIButton = createSystemIconButton(systemName: "video", action: #selector(videoCall))
+    private lazy var voiceCallButton: UIButton = createSystemIconButton(systemName: "phone", action: #selector(voiceCall))
+    
     private lazy var messageField: UITextField = {
         let tf = UITextField()
         tf.placeholder = "输入消息"
         tf.borderStyle = .roundedRect
         tf.delegate = self
+        tf.returnKeyType = .send
         tf.translatesAutoresizingMaskIntoConstraints = false
         return tf
-    }()
-    
-    private lazy var sendButton: UIButton = {
-        let btn = UIButton(type: .system)
-        btn.setTitle("发送", for: .normal)
-        btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        btn.addTarget(self, action: #selector(sendMessage), for: .touchUpInside)
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        return btn
     }()
     
     // MARK: - Lifecycle
@@ -135,10 +140,6 @@ class ChatViewController: UIViewController {
         }
     }
     
-    // MARK: - UI Setup
-    // 添加约束引用
-    private var inputContainerBottomConstraint: NSLayoutConstraint!
-    
     private func setupUI() {
         view.backgroundColor = .white
         title = self.model.name
@@ -148,18 +149,26 @@ class ChatViewController: UIViewController {
             target: self.navigationController,
             action: #selector(UINavigationController.popViewController(animated:))
         )
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        
+        inputContainerBottomConstraint = inputContainer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         
         // 添加表格视图
         view.addSubview(tableView)
         view.addSubview(inputContainer)
         
         // 输入容器布局
+        // 在输入容器中添加按钮
+        inputContainer.addSubview(buttonStack)
         inputContainer.addSubview(messageField)
-        inputContainer.addSubview(sendButton)
         
-        // 初始化底部约束
-        inputContainerBottomConstraint = inputContainer.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        
+        // 将按钮添加到堆栈
+        buttonStack.addArrangedSubview(imageButton)
+        buttonStack.addArrangedSubview(voiceButton)
+        buttonStack.addArrangedSubview(voiceCallButton)
+        buttonStack.addArrangedSubview(videoCallButton)
+    
         NSLayoutConstraint.activate([
             // 表格视图约束
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -171,18 +180,19 @@ class ChatViewController: UIViewController {
             inputContainer.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             inputContainer.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             inputContainerBottomConstraint, // 使用已初始化的约束
-            inputContainer.heightAnchor.constraint(equalToConstant: 60),
+            inputContainer.heightAnchor.constraint(equalToConstant: 100),
+
+            // 按钮堆栈约束（修改部分）
+            buttonStack.topAnchor.constraint(equalTo: inputContainer.topAnchor, constant: 8),
+            buttonStack.leadingAnchor.constraint(equalTo: inputContainer.leadingAnchor, constant: 16),
+            buttonStack.trailingAnchor.constraint(equalTo: inputContainer.trailingAnchor, constant: -16),
+            buttonStack.heightAnchor.constraint(equalToConstant: 36),
             
-            // 消息输入框约束
+            // 消息输入框约束（调整顶部约束）
+            messageField.topAnchor.constraint(equalTo: buttonStack.bottomAnchor, constant: 8),
             messageField.leadingAnchor.constraint(equalTo: inputContainer.leadingAnchor, constant: 16),
-            messageField.topAnchor.constraint(equalTo: inputContainer.topAnchor, constant: 8),
             messageField.bottomAnchor.constraint(equalTo: inputContainer.bottomAnchor, constant: -8),
-            
-            // 发送按钮约束
-            sendButton.leadingAnchor.constraint(equalTo: messageField.trailingAnchor, constant: 8),
-            sendButton.trailingAnchor.constraint(equalTo: inputContainer.trailingAnchor, constant: -16),
-            sendButton.centerYAnchor.constraint(equalTo: messageField.centerYAnchor),
-            sendButton.widthAnchor.constraint(equalToConstant: 60)
+            messageField.trailingAnchor.constraint(equalTo: inputContainer.trailingAnchor, constant: -16)
         ])
     }
     
@@ -267,13 +277,56 @@ class ChatViewController: UIViewController {
     @objc private func handleTableViewTap() {
         view.endEditing(true)
     }
+    
+    // 新增按钮创建方法
+    private func createSystemIconButton(systemName: String, action: Selector) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(systemName: systemName), for: .normal)
+        button.tintColor = .systemBlue
+        button.addTarget(self, action: action, for: .touchUpInside)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }
+    
+    // MARK: - 新增按钮事件方法
+    @objc private func selectImage() {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true)
+    }
+
+    @objc private func sendVoice() {
+        // 显示语音录制界面
+        let alert = UIAlertController(title: "语音消息", message: "按住录制", preferredStyle: .actionSheet)
+        present(alert, animated: true)
+    }
+
+    @objc private func videoCall() {
+        let alert = UIAlertController(title: "视频通话", message: "即将发起视频通话", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default))
+        present(alert, animated: true)
+    }
+
+    @objc private func voiceCall() {
+        let alert = UIAlertController(title: "语音通话", message: "即将发起语音通话", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default))
+        present(alert, animated: true)
+    }
+
 }
 
 extension ChatViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let model = msgModels[indexPath.row]
-        return (model.messageSize?.height ?? 56) + 32
+        return (model.messageSize?.height ?? 56) + 32 + 20
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let message = self.msgModels[indexPath.row]
+        print("=== \(message.messageType)")
+        handleTableViewTap()
     }
     
 }
@@ -304,5 +357,23 @@ extension ChatViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         sendMessage()
         return true
+    }
+}
+
+// 新增图片选择代理方法
+extension ChatViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let url = info[.imageURL] as? URL {
+            // 处理选择的图片
+            print("直接获取图片路径: \(url.path)")
+            NIMSDKManager.shared.sendImageMessage(path: url.path, sessionId: model.conversationId, sessionType: model.conversationType)
+        }
+        dismiss(animated: true)
+    }
+}
+
+extension ChatViewController: UIGestureRecognizerDelegate {
+    func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        return navigationController?.viewControllers.count ?? 0 > 1
     }
 }

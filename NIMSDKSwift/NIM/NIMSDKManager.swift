@@ -84,15 +84,6 @@ final class NIMSDKManager {
         }
     }
     
-    func sendTextMessage(text: String, sessionId: String, sessionType: Int, completion: ((Int) -> Void)? = nil) {
-        let type = sessionType == 1 ? NIMSessionType.team : NIMSessionType.P2P
-        let message = NIMMessage()
-        message.text = text
-        NIMSDK.shared().chatManager.send(message, to: NIMSession.init(sessionId, type: type)) { error in
-            
-        }
-    }
-    
     // 新增错误处理私有方法
     private func processLoginError(_ error: NSError) -> Error {
         switch error.code {
@@ -116,6 +107,27 @@ final class NIMSDKManager {
         }
         
         return list
+    }
+    
+    /* ----消息发送------ */
+    //文本消息发送
+    func sendTextMessage(text: String, sessionId: String, sessionType: Int, completion: ((Int) -> Void)? = nil) {
+        let type = sessionType == 1 ? NIMSessionType.team : NIMSessionType.P2P
+        let message = NIMMessage()
+        message.text = text
+        NIMSDK.shared().chatManager.send(message, to: NIMSession.init(sessionId, type: type)) { error in
+            
+        }
+    }
+    //图片消息发送
+    func sendImageMessage(path: String, sessionId: String, sessionType: Int, completion: ((Int) -> Void)? = nil) {
+        let type = sessionType == 1 ? NIMSessionType.team : NIMSessionType.P2P
+        let message = NIMMessage()
+        let messageObject = NIMImageObject(filepath: path)
+        message.messageObject = messageObject
+        NIMSDK.shared().chatManager.send(message, to: NIMSession.init(sessionId, type: type)) { error in
+            
+        }
     }
     
 }

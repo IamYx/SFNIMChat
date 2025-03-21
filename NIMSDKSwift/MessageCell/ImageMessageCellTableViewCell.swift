@@ -57,12 +57,20 @@ class ImageMessageCellTableViewCell: MessageCellTableViewCell {
             messageImgL.isHidden = true
             messageImgR.isHidden = false
             
-            messageImgR.sd_setImage(with: URL(string: model.imageUrl))
+            if (model.imageUrl.contains("http")) {
+                messageImgR.sd_setImage(with: URL(string: model.imageUrl))
+            } else {
+                messageImgR.image = UIImage(contentsOfFile: model.imageUrl)
+            }
         } else {
             messageImgR.isHidden = true
             messageImgL.isHidden = false
             
-            messageImgL.sd_setImage(with: URL(string: model.imageUrl))
+            if (model.imageUrl.contains("http")) {
+                messageImgL.sd_setImage(with: URL(string: model.imageUrl))
+            } else {
+                messageImgL.image = UIImage(contentsOfFile: model.imageUrl)
+            }
         }
         
     }
