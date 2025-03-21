@@ -1,0 +1,35 @@
+PODS:
+  - NIMSDK_LITE (9.19.4):
+    - NIMSDK_LITE/NOS (= 9.19.4)
+    - YXArtemis_XCFramework
+  - NIMSDK_LITE/NOS (9.19.4):
+    - YXArtemis_XCFramework
+  - SDWebImage (5.21.0):
+    - SDWebImage/Core (= 5.21.0)
+  - SDWebImage/Core (5.21.0)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - YXArtemis_XCFramework (1.1.4)
+
+DEPENDENCIES:
+  - NIMSDK_LITE (= 9.19.4)
+  - SDWebImage
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - NIMSDK_LITE
+    - SDWebImage
+    - SVProgressHUD
+    - YXArtemis_XCFramework
+
+SPEC CHECKSUMS:
+  NIMSDK_LITE: d453b06f6bba5da0b7edaf2bc4c5988e9c59635c
+  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  YXArtemis_XCFramework: d298161285aa9cf0c99800b17847dc99aef60617
+
+PODFILE CHECKSUM: ee8700e263e13e16a15aa020accf5963cec036f7
+
+COCOAPODS: 1.14.3
