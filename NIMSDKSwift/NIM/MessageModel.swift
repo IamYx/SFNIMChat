@@ -19,6 +19,7 @@ class MessageModel: NSObject {
     var messageId = ""
     var messageSendStatus = 0
     var senderName = ""
+    var voiceDuration = 0.0
     
     init(message: NIMMessage) {
         super.init()

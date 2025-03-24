@@ -4,6 +4,7 @@ class ChatViewController: UIViewController {
     
     var model : ConversationModel
     var msgModels: [MessageModel] = []
+    private var voiceRecordManager: VoiceRecordManager!
     private var inputContainerBottomConstraint: NSLayoutConstraint!
     
     init(model: ConversationModel) {
@@ -80,6 +81,7 @@ class ChatViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupKeyboardObservers()
+        setupVoiceRecordManager()
         
         self.msgModels = NIMSDKManager.shared.getMessageList(coversatinId: model.conversationId, type: model.conversationType)
         self.tableView.reloadData()
@@ -296,10 +298,19 @@ class ChatViewController: UIViewController {
         present(imagePicker, animated: true)
     }
 
+    private func setupVoiceRecordManager() {
+        voiceRecordManager = VoiceRecordManager(parentVC: self)
+        voiceRecordManager.onRecordingFinish = { [weak self] url in
+            guard let url = url else { return }
+            print("录音文件路径: \(url.path)")
+            // 调用发送方法：NIMSDKManager.shared.sendVoiceMessage(path: url.path, ...)
+        }
+    }
+    
     @objc private func sendVoice() {
-        // 显示语音录制界面
-        let alert = UIAlertController(title: "语音消息", message: "按住录制", preferredStyle: .actionSheet)
-        present(alert, animated: true)
+        let longPress = UILongPressGestureRecognizer(target: voiceRecordManager,
+                                                     action:#selector(VoiceRecordManager.handleLongPress(_:)))
+        voiceButton.addGestureRecognizer(longPress)
     }
 
     @objc private func videoCall() {

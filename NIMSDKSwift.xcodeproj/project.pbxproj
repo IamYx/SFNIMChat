@@ -25,6 +25,8 @@
 		A89033392D87E6CE008AA089 /* TextMessageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89033382D87E6CE008AA089 /* TextMessageCellTableViewCell.swift */; };
 		A890333B2D87E835008AA089 /* MessageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A890333A2D87E835008AA089 /* MessageCellTableViewCell.swift */; };
 		A890333E2D880B46008AA089 /* UIView+An.swift in Sources */ = {isa = PBXBuildFile; fileRef = A890333D2D880B46008AA089 /* UIView+An.swift */; };
+		A890336F2D910937008AA089 /* VoiceRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A890336E2D910937008AA089 /* VoiceRecordManager.swift */; };
+		A89033712D910D8E008AA089 /* VoiceMessageCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89033702D910D8E008AA089 /* VoiceMessageCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		A89033382D87E6CE008AA089 /* TextMessageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextMessageCellTableViewCell.swift; sourceTree = "<group>"; };
 		A890333A2D87E835008AA089 /* MessageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellTableViewCell.swift; sourceTree = "<group>"; };
 		A890333D2D880B46008AA089 /* UIView+An.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+An.swift"; sourceTree = "<group>"; };
+		A890336E2D910937008AA089 /* VoiceRecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecordManager.swift; sourceTree = "<group>"; };
+		A89033702D910D8E008AA089 /* VoiceMessageCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceMessageCellTableViewCell.swift; sourceTree = "<group>"; };
 		A8B39DC129FE269000B2B2B7 /* NIMSDKSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NIMSDKSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4ABAA8C6DC51ABFF33CC6AE /* Pods-NIMSDKSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NIMSDKSwift.release.xcconfig"; path = "Target Support Files/Pods-NIMSDKSwift/Pods-NIMSDKSwift.release.xcconfig"; sourceTree = "<group>"; };
 		F4D0F185DA1D03EB96F270CA /* Pods_NIMSDKSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NIMSDKSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,9 +133,11 @@
 		A89033352D87E4FF008AA089 /* MessageCell */ = {
 			isa = PBXGroup;
 			children = (
+				A89033702D910D8E008AA089 /* VoiceMessageCellTableViewCell.swift */,
 				A89033362D87E564008AA089 /* ImageMessageCellTableViewCell.swift */,
 				A89033382D87E6CE008AA089 /* TextMessageCellTableViewCell.swift */,
 				A890333A2D87E835008AA089 /* MessageCellTableViewCell.swift */,
+				A890336E2D910937008AA089 /* VoiceRecordManager.swift */,
 			);
 			path = MessageCell;
 			sourceTree = "<group>";
@@ -278,8 +284,10 @@
 				A890333B2D87E835008AA089 /* MessageCellTableViewCell.swift in Sources */,
 				A89033282D83D939008AA089 /* NIMSDKManager.swift in Sources */,
 				A81925C32D76E8D200F189DA /* LoginViewController.swift in Sources */,
+				A890336F2D910937008AA089 /* VoiceRecordManager.swift in Sources */,
 				A89033342D842D74008AA089 /* MessageModel.swift in Sources */,
 				A81925C52D76F22700F189DA /* ConversationListViewController.swift in Sources */,
+				A89033712D910D8E008AA089 /* VoiceMessageCellTableViewCell.swift in Sources */,
 				A88F522F29F50B9C0021A665 /* ViewController.swift in Sources */,
 				A89033322D8419C9008AA089 /* ChatViewController.swift in Sources */,
 				A88F522B29F50B9C0021A665 /* AppDelegate.swift in Sources */,

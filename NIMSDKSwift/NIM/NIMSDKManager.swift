@@ -130,4 +130,15 @@ final class NIMSDKManager {
         }
     }
     
+    //语音消息发送
+    func sendVoiceMessage(path: String, sessionId: String, sessionType: Int, completion: ((Int) -> Void)? = nil) {
+        let type = sessionType == 1 ? NIMSessionType.team : NIMSessionType.P2P
+        let message = NIMMessage()
+        let messageObject = NIMVideoObject(sourcePath: path)
+        message.messageObject = messageObject
+        NIMSDK.shared().chatManager.send(message, to: NIMSession.init(sessionId, type: type)) { error in
+            
+        }
+    }
+    
 }
