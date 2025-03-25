@@ -1,2 +1,2 @@
 # SFNIMChat
-基于云信im和rtc实现的聊天app
+基于云信im和rtc实现的聊天app,特点是分离了UI和云信sdk的方法调用
