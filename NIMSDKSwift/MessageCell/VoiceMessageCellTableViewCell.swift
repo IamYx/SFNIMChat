@@ -35,23 +35,19 @@ class VoiceMessageCellTableViewCell: MessageCellTableViewCell {
         bubbleViewL.addSubview(playButton)
         bubbleViewL.addSubview(waveformView)
         bubbleViewL.addSubview(durationLabel)
-        
-        bubbleViewR.addSubview(playButton)
-        bubbleViewR.addSubview(waveformView)
-        bubbleViewR.addSubview(durationLabel)
     }
     
     override func configure(model: MessageModel) {
         super.configure(model: model)
         
-        durationLabel.text = "\(model.voiceDuration)″"
+        durationLabel.text = "\(String(format: "%.2f", model.voiceDuration))″"
         cmodel = model
         updateVoiceLayout()
     }
     
     private func updateVoiceLayout() {
         let bubbleWidth = cmodel.isOutgoing ? bubbleViewR.frame.width : bubbleViewL.frame.width
-        let contentX: CGFloat = cmodel.isOutgoing ? bubbleViewR.frame.origin.x : bubbleViewL.frame.origin.x
+//        let contentX: CGFloat = cmodel.isOutgoing ? bubbleViewR.frame.origin.x : bubbleViewL.frame.origin.x
         
         // 播放按钮布局
         playButton.frame = CGRect(
@@ -65,7 +61,7 @@ class VoiceMessageCellTableViewCell: MessageCellTableViewCell {
         waveformView.frame = CGRect(
             x: 40,
             y: (bubbleViewL.frame.height - 6) / 2,
-            width: bubbleWidth - 80,
+            width: bubbleWidth - 100,
             height: 6
         )
         
@@ -73,15 +69,20 @@ class VoiceMessageCellTableViewCell: MessageCellTableViewCell {
         durationLabel.frame = CGRect(
             x: waveformView.frame.maxX + 8,
             y: (bubbleViewL.frame.height - 20) / 2,
-            width: 40,
+            width: 60,
             height: 20
         )
         
+        bubbleViewL.addSubview(playButton)
+        bubbleViewL.addSubview(waveformView)
+        bubbleViewL.addSubview(durationLabel)
+        
         // 根据消息方向调整元素位置
         if cmodel.isOutgoing {
-            playButton.frame.origin.x = bubbleViewR.frame.width - 36
-            waveformView.frame.origin.x = bubbleViewR.frame.width - waveformView.frame.width - 48
-            durationLabel.frame.origin.x = bubbleViewR.frame.width - durationLabel.frame.width - 12
+            
+            bubbleViewR.addSubview(playButton)
+            bubbleViewR.addSubview(waveformView)
+            bubbleViewR.addSubview(durationLabel)
         }
     }
     

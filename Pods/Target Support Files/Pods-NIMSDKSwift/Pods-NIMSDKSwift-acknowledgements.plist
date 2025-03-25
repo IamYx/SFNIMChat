@@ -14,7 +14,67 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright 2024 Netease </string>
+			<string>Copyright 2022 Netease </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>NECommonKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2022 Netease </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>NECommonUIKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2022 Netease </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>NECoreKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2022 Netease </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>NERtcCallKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2022 Netease </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>NERtcCallUIKit</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2022 Netease </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>NERtcSDK</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2025 Netease </string>
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>

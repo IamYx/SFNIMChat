@@ -15,10 +15,7 @@ SDImageCoderOption const SDImageCoderDecodeThumbnailPixelSize = @"decodeThumbnai
 SDImageCoderOption const SDImageCoderDecodeFileExtensionHint = @"decodeFileExtensionHint";
 SDImageCoderOption const SDImageCoderDecodeTypeIdentifierHint = @"decodeTypeIdentifierHint";
 SDImageCoderOption const SDImageCoderDecodeUseLazyDecoding = @"decodeUseLazyDecoding";
-SDImageCoderOption const SDImageCoderDecodeScaleDownLimitBytes = @"decodeScaleDownLimitBytes";
-SDImageCoderOption const SDImageCoderDecodeToHDR = @"decodeToHDR";
 
-SDImageCoderOption const SDImageCoderEncodeToHDR = @"encodeToHDR";
 SDImageCoderOption const SDImageCoderEncodeFirstFrameOnly = @"encodeFirstFrameOnly";
 SDImageCoderOption const SDImageCoderEncodeCompressionQuality = @"encodeCompressionQuality";
 SDImageCoderOption const SDImageCoderEncodeBackgroundColor = @"encodeBackgroundColor";

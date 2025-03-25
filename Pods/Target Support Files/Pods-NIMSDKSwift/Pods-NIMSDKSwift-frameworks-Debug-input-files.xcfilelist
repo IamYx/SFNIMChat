@@ -1,6 +1,24 @@
 ${PODS_ROOT}/Target Support Files/Pods-NIMSDKSwift/Pods-NIMSDKSwift-frameworks.sh
+${PODS_ROOT}/NECommonUIKit/NECommonUIKit.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${PODS_ROOT}/YXAlog/YXAlog_iOS.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NECommonKit/NECommonKit.framework/NECommonKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NECoreKit/NECoreKit.framework/NECoreKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcCallKit/NOS/NERtcCallKit.framework/NERtcCallKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcCallUIKit/NOS/NERtcCallUIKit.framework/NERtcCallUIKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/AiDenoise/NERtcAiDenoise.framework/NERtcAiDenoise
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/AiHowling/NERtcAiHowling.framework/NERtcAiHowling
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/Beauty/NERtcBeauty.framework/NERtcBeauty
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/FaceDetect/NERtcFaceDetect.framework/NERtcFaceDetect
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/FaceEnhance/NERtcFaceEnhance.framework/NERtcFaceEnhance
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/Nenn/NERtcnn.framework/NERtcnn
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/RtcBasic/NERtcSDK.framework/NERtcSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/ScreenShare/NERtcReplayKit.framework/NERtcReplayKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/Segment/NERtcPersonSegment.framework/NERtcPersonSegment
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/SpatialSound/NERtcAudio3D.framework/NERtcAudio3D
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/SuperResolution/NERtcSuperResolution.framework/NERtcSuperResolution
+${PODS_XCFRAMEWORKS_BUILD_DIR}/NERtcSDK/VideoDenoise/NERtcVideoDenoise.framework/NERtcVideoDenoise
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSDK.framework/NIMSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMSocketRocket.framework/NIMSocketRocket
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/NIMSDK_LITE/NOS/NIMQuic.framework/NIMQuic

@@ -11,6 +11,7 @@
 #import "NIMApnsManagerProtocol.h"
 #import "NIMPushNotificationSetting.h"
 
+
 @class NIMQChatChannelIdInfo;
 @class NIMQChatUserPushNotificationConfig;
 @class NIMQChatChannelCategoryIdInfo;

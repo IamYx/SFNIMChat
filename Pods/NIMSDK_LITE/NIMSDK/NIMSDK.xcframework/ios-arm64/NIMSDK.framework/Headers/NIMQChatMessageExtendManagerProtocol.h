@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "NIMQChatMessageManagerProtocol.h"
 #import "NIMQChatAPIDefs.h"
+
 @class NIMQChatMessage;
 
 @class NIMQChatGetThreadMessagesParam;
@@ -103,7 +104,7 @@ typedef void (^NIMQChatGetCommentatorsHandler) (NSError * _Nullable  error, NIMQ
  * @param completion 结果回调
  */
 - (void)getReferMessages:(NIMQChatMessage *)message
-                    type:(NIMQChatMessageReferType)type
+                    type:(NSInteger)type
               completion:(nullable NIMQChatGetMessageHistoryHandler)completion;
 
 /**

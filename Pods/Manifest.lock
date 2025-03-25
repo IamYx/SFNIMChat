@@ -1,35 +1,98 @@
 PODS:
-  - NIMSDK_LITE (9.19.4):
-    - NIMSDK_LITE/NOS (= 9.19.4)
+  - NECommonKit (9.7.2):
+    - YXAlog
+  - NECommonUIKit (9.7.5):
+    - NECommonKit
+    - SDWebImage
+  - NECoreKit (9.7.4):
+    - YXAlog (= 1.0.7)
+  - NERtcCallKit (3.5.0):
+    - NERtcCallKit/NOS (= 3.5.0)
+  - NERtcCallKit/NOS (3.5.0):
+    - NECommonKit (= 9.7.2)
+    - NECoreKit (= 9.7.4)
+    - NIMSDK_LITE (= 10.8.0)
+    - YXAlog (= 1.0.7)
+  - NERtcCallUIKit (3.5.0):
+    - NERtcCallUIKit/NOS (= 3.5.0)
+  - NERtcCallUIKit/NOS (3.5.0):
+    - NECommonUIKit (= 9.7.5)
+    - NERtcCallKit/NOS (= 3.5.0)
+    - SDWebImage (= 5.15.4)
+  - NERtcSDK (5.8.5):
+    - NERtcSDK/AiDenoise (= 5.8.5)
+    - NERtcSDK/AiHowling (= 5.8.5)
+    - NERtcSDK/Beauty (= 5.8.5)
+    - NERtcSDK/FaceDetect (= 5.8.5)
+    - NERtcSDK/FaceEnhance (= 5.8.5)
+    - NERtcSDK/Nenn (= 5.8.5)
+    - NERtcSDK/RtcBasic (= 5.8.5)
+    - NERtcSDK/ScreenShare (= 5.8.5)
+    - NERtcSDK/Segment (= 5.8.5)
+    - NERtcSDK/SpatialSound (= 5.8.5)
+    - NERtcSDK/SuperResolution (= 5.8.5)
+    - NERtcSDK/VideoDenoise (= 5.8.5)
+  - NERtcSDK/AiDenoise (5.8.5)
+  - NERtcSDK/AiHowling (5.8.5)
+  - NERtcSDK/Beauty (5.8.5)
+  - NERtcSDK/FaceDetect (5.8.5)
+  - NERtcSDK/FaceEnhance (5.8.5)
+  - NERtcSDK/Nenn (5.8.5)
+  - NERtcSDK/RtcBasic (5.8.5)
+  - NERtcSDK/ScreenShare (5.8.5)
+  - NERtcSDK/Segment (5.8.5)
+  - NERtcSDK/SpatialSound (5.8.5)
+  - NERtcSDK/SuperResolution (5.8.5)
+  - NERtcSDK/VideoDenoise (5.8.5)
+  - NIMSDK_LITE (10.8.0):
+    - NIMSDK_LITE/NOS (= 10.8.0)
     - YXArtemis_XCFramework
-  - NIMSDK_LITE/NOS (9.19.4):
+  - NIMSDK_LITE/NOS (10.8.0):
     - YXArtemis_XCFramework
-  - SDWebImage (5.21.0):
-    - SDWebImage/Core (= 5.21.0)
-  - SDWebImage/Core (5.21.0)
+  - SDWebImage (5.15.4):
+    - SDWebImage/Core (= 5.15.4)
+  - SDWebImage/Core (5.15.4)
   - SVProgressHUD (2.3.1):
     - SVProgressHUD/Core (= 2.3.1)
   - SVProgressHUD/Core (2.3.1)
+  - YXAlog (1.0.7)
   - YXArtemis_XCFramework (1.1.4)
 
 DEPENDENCIES:
-  - NIMSDK_LITE (= 9.19.4)
+  - NERtcCallKit (= 3.5.0)
+  - NERtcCallUIKit (= 3.5.0)
+  - NERtcSDK
+  - NIMSDK_LITE (= 10.8.0)
   - SDWebImage
   - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - NECommonKit
+    - NECommonUIKit
+    - NECoreKit
+    - NERtcCallKit
+    - NERtcCallUIKit
+    - NERtcSDK
     - NIMSDK_LITE
     - SDWebImage
     - SVProgressHUD
+    - YXAlog
     - YXArtemis_XCFramework
 
 SPEC CHECKSUMS:
-  NIMSDK_LITE: d453b06f6bba5da0b7edaf2bc4c5988e9c59635c
-  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
+  NECommonKit: f2359393571fcc105a7fc2fb0367a71319606042
+  NECommonUIKit: 79431648074638d12b85cba811da320941d84a7c
+  NECoreKit: b4066434c37826815ac3992738554735a5aa2361
+  NERtcCallKit: 2131e6401f37c1a8726d340afa4427b4fee46a35
+  NERtcCallUIKit: f5bdbf3d2893fcff31b6941682a7ee69ba858031
+  NERtcSDK: b196b8e81a0bd3be0a687c5bab25f3b81022a2da
+  NIMSDK_LITE: aaedc4fa5ca4c2c817144910066c6795338752ed
+  SDWebImage: 1c39de67663e5eebb2f41324d5d580eeea12dd4c
   SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  YXAlog: ac9bab3aff1326caa72cc25aedc358bc8d4f1b31
   YXArtemis_XCFramework: d298161285aa9cf0c99800b17847dc99aef60617
 
-PODFILE CHECKSUM: ee8700e263e13e16a15aa020accf5963cec036f7
+PODFILE CHECKSUM: 09bfff0acfd1bdeb9e5bd7b9a538054edcaf05a1
 
 COCOAPODS: 1.14.3

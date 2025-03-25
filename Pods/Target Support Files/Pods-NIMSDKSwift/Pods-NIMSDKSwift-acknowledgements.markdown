@@ -1,9 +1,33 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## NECommonKit
+
+Copyright 2022 Netease 
+
+## NECommonUIKit
+
+Copyright 2022 Netease 
+
+## NECoreKit
+
+Copyright 2022 Netease 
+
+## NERtcCallKit
+
+Copyright 2022 Netease 
+
+## NERtcCallUIKit
+
+Copyright 2022 Netease 
+
+## NERtcSDK
+
+Copyright 2022 Netease 
+
 ## NIMSDK_LITE
 
-Copyright 2024 Netease 
+Copyright 2025 Netease 
 
 ## SDWebImage
 

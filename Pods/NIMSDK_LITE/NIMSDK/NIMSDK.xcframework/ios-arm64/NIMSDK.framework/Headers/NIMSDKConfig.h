@@ -322,7 +322,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) BOOL disableBackgroundTask;
 
-@end
+/**
+ * 指南针数据相关， 默认YES
+ * @discussion 如果需要关闭，需要在SDK初始化之前配置
+ */
+@property (nonatomic, assign) BOOL enableCompass;
 
+@end
 
 NS_ASSUME_NONNULL_END

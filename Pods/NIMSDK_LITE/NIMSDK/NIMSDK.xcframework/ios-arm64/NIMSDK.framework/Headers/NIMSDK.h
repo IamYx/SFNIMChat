@@ -21,6 +21,8 @@
  */
 #import "NIMSDKOption.h"
 #import "NIMSDKConfig.h"
+#import "NIMEncryptionConfig.h"
+#import "NIMAsymEncryptionOption.h"
 
 /**
  *  会话相关定义
@@ -30,7 +32,6 @@
 #import "NIMMessageSearchOption.h"
 #import "NIMIncompleteSessionInfo.h"
 #import "NIMMessagesInSessionOption.h"
-
 
 /**
  *  用户定义
@@ -87,6 +88,32 @@
 #import "NIMSessionDeleteAllRemoteMessagesInfo.h"
 #import "NIMMessageRobotInfo.h"
 #import "NIMMessageAIConfig.h"
+#import "NIMMessageSetting.h"
+#import "NIMMessageApnsMemberOption.h"
+#import "NIMMessageReceipt.h"
+#import "NIMTeamMessageReceipt.h"
+#import "NIMTeamMessageReceiptDetail.h"
+#import "NIMAntiSpamOption.h"
+
+#import "NIMImageObject.h"
+#import "NIMAudioObject.h"
+#import "NIMVideoObject.h"
+#import "NIMFileObject.h"
+#import "NIMLocationObject.h"
+#import "NIMTipObject.h"
+#import "NIMRobotObject.h"
+#import "NIMRtcCallRecordObject.h"
+#import "NIMNotificationObject.h"
+#import "NIMMessageObjectProtocol.h"
+#import "NIMCustomObject.h"
+
+#import "NIMNotificationContent.h"
+#import "NIMTeamNotificationContent.h"
+#import "NIMSuperTeamNotificationContent.h"
+#import "NIMChatroomNotificationContent.h"
+#import "NIMNetCallNotificationContent.h"
+#import "NIMUnsupportedNotificationContent.h"
+#import "NIMCustomSystemNotificationSetting.h"
 
 /**
  *  推送定义
@@ -129,7 +156,6 @@
 #import "NIMSignalingRequest.h"
 #import "NIMSignalingResponse.h"
 
-
 /**
  *  各个对外接口协议定义
  */
@@ -167,6 +193,26 @@
 #import "NIMAIManagerProtocol.h"
 
 /**
+ *  V2接口协议定义
+ */
+#import "V2NIMLoginServiceProtocol.h"
+#import "V2NIMMessageServiceProtocol.h"
+#import "V2NIMStorageServiceProtocol.h"
+#import "V2NIMNotificationServiceProtocol.h"
+#import "V2NIMConversationServiceProtocol.h"
+#import "V2NIMTeamServiceProtocol.h"
+#import "V2NIMNotificationServiceProtocol.h"
+#import "V2NIMSettingServiceProtocol.h"
+#import "V2NIMUserServiceProtocol.h"
+#import "V2NIMFriendServiceProtocol.h"
+#import "V2NIMChatroomServiceProtocol.h"
+#import "V2NIMAIServiceProtocol.h"
+#import "V2NIMSignallingServiceProtocol.h"
+#import "V2NIMSubscriptionServiceProtocol.h"
+#import "V2NIMPassthroughServiceProtocol.h"
+#import "V2NIMLocalConversationServiceProtocol.h"
+
+/**
  *  SDK业务类
  */
 #import "NIMServerSetting.h"
@@ -186,7 +232,6 @@
  *  透传代理定义
  */
 #import "NIMPassThroughOption.h"
-
 
 /**
  *  Thread Talk & 快捷回复
@@ -226,35 +271,100 @@
 #import "NIMQChatAPIDefs.h"
 
 /**
+ * 其他
+ */
+#import "NIMRedPacketRequest.h"
+#import "NIMGenericTypeAPIDefine.h"
+
+/**
 * 日志
 */
 # import "NIMLogDesensitizationConfig.h"
 
-#import "NIMCustomSystemNotificationSetting.h"
-#import "NIMUnsupportedNotificationContent.h"
-#import "NIMCustomObject.h"
-#import "NIMMessageApnsMemberOption.h"
-#import "NIMChatroomNotificationContent.h"
-#import "NIMSuperTeamNotificationContent.h"
-#import "NIMNotificationContent.h"
-#import "NIMTipObject.h"
-#import "NIMLocationObject.h"
-#import "NIMTeamMessageReceipt.h"
-#import "NIMRobotObject.h"
-#import "NIMEncryptionConfig.h"
-#import "NIMRedPacketRequest.h"
-#import "NIMAudioObject.h"
-#import "NIMVideoObject.h"
-#import "NIMAntiSpamOption.h"
-#import "NIMImageObject.h"
-#import "NIMTeamNotificationContent.h"
-#import "NIMNetCallNotificationContent.h"
-#import "NIMMessageReceipt.h"
-#import "NIMTeamMessageReceiptDetail.h"
-#import "NIMMessageObjectProtocol.h"
-#import "NIMRtcCallRecordObject.h"
-#import "NIMAsymEncryptionOption.h"
-#import "NIMNotificationObject.h"
-#import "NIMGenericTypeAPIDefine.h"
-#import "NIMFileObject.h"
-#import "NIMMessageSetting.h"
+/**
+ *  V2 Base
+ */
+#import "V2NIMError.h"
+#import "V2NIMBase.h"
+
+/**
+ *  V2 Common
+ */
+#import "V2NIMSDKOption.h"
+#import "V2NIMAntispamConfig.h"
+#import "V2NIMLocationInfo.h"
+#import "V2NIMSize.h"
+
+/**
+ *  V2 Conversation
+ */
+#import "V2NIMConversationEnum.h"
+#import "V2NIMConversationIdUtil.h"
+#import "V2NIMLastMessage.h"
+
+/**
+ *  V2 Message
+ */
+#import "V2NIMMessage.h"
+#import "V2NIMMessageAttachment.h"
+#import "V2NIMMessageAttachmentCreator.h"
+#import "V2NIMMessageRefer.h"
+#import "V2NIMMessageCreator.h"
+#import "V2NIMMessageEnum.h"
+#import "V2NIMMessagePinNotification.h"
+#import "V2NIMMessageRevokeNotification.h"
+#import "V2NIMMessageRevokeParams.h"
+#import "V2NIMMessageSearchParam.h"
+#import "V2NIMNotificationAntispamConfig.h"
+#import "V2NIMNotificationConfig.h"
+#import "V2NIMNotificationPushConfig.h"
+#import "V2NIMNotificationRouteConfig.h"
+#import "V2NIMP2PMessageReadReceipt.h"
+#import "V2NIMSendCustomNotificationParams.h"
+#import "V2NIMTeamMessageReadReceipt.h"
+#import "V2NIMMessageQuickCommentPushConfig.h"
+#import "V2NIMAddCollectionParams.h"
+#import "V2NIMCollection.h"
+#import "V2NIMMessageQuickComment.h"
+#import "V2NIMMessagePin.h"
+#import "V2NIMCollectionOption.h"
+#import "V2NIMMessageQuickCommentNotification.h"
+#import "V2NIMMessageSearchParams.h"
+#import "V2NIMMessageSearchExParams.h"
+#import "V2NIMMessageSearchResult.h"
+#import "V2NIMMessageDeletedNotification.h"
+#import "V2NIMClearHistoryNotification.h"
+#import "V2NIMCustomNotification.h"
+#import "V2NIMBroadcastNotification.h"
+#import "V2NIMVoiceToTextParams.h"
+#import "V2NIMTeamMessageReadReceiptDetail.h"
+#import "V2NIMThreadMessageListResult.h"
+#import "V2NIMThreadMessageListOption.h"
+#import "V2NIMModifyMessageParams.h"
+#import "V2NIMModifyMessageResult.h"
+#import "V2NIMCollectionListResult.h"
+/**
+ * V2 Chatroom
+ */
+#import "V2NIMChatroomMessage.h"
+#import "V2NIMChatroomMessageCreator.h"
+#import "V2NIMChatroomCdnTrackInfo.h"
+/**
+ * V2 信令
+ */
+#import "V2NIMSignallingRequest.h"
+
+/**
+ * V2 Storage
+ */
+#import "V2NIMDownloadMessageAttachmentParams.h"
+#import "V2NIMGetMediaResourceInfoResult.h"
+
+/**
+ *  V2 Util
+ */
+#import "V2NIMClientAntispamUtil.h"
+#import "V2NIMClientAntispamResult.h"
+#import "V2NIMMessageConverter.h"
+#import "V2NIMStorageUtil.h"
+#import "DataStructureConverter.h"

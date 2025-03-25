@@ -38,6 +38,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable,nonatomic,copy)  NSSet<NSString *> *avoidNosAccelerationBuckets;
 
 /**
+ *  启用v2 API
+ */
+@property (nonatomic,assign)         BOOL    v2;
+
+/**
  *  注册选项初始化方法
  *  @param appKey  云信 AppKey
  */

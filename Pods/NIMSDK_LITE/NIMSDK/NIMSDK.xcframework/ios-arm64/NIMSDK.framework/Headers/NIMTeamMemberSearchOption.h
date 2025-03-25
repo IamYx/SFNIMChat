@@ -31,11 +31,11 @@ typedef NS_ENUM(NSInteger,NIMTeamMemberSearchOrder) {
 /**
  *  查询指定群组id，为空查询所有群组。
  */
-@property (nonatomic, assign)  NSString *teamId;
+@property (nonatomic, strong)  NSString *teamId;
 /**
  *  搜索关键字，不为空。
  */
-@property (nonatomic, assign)  NSString *keyword;
+@property (nonatomic, strong)  NSString *keyword;
 /**
  *  查询成员的开始位置, 要求 >=0 。
  */

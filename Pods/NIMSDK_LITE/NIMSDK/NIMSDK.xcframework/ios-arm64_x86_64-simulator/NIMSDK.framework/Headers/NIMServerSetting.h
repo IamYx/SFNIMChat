@@ -142,11 +142,9 @@ typedef NS_ENUM (NSInteger, NIMServerEnv){
 @property (nonatomic, assign) BOOL cdnEnable;
 
 /**
- * 指南针数据默认端点
- * 如果需要使用多个，使用“,”分割
+ * 指南针数据默认端点，如果需要使用多个，使用“,”分割
  */
-@property (nonatomic,copy,nonnull) NSString *compassDataEndpoint;
-
+@property (nonatomic,copy) NSString *compassDataEndpoint;
 /**
 * 从配置数据更新
 */

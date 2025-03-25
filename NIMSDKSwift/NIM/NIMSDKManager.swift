@@ -1,4 +1,5 @@
 import NIMSDK
+import NERtcCallUIKit
 
 final class NIMSDKManager {
     
@@ -12,11 +13,18 @@ final class NIMSDKManager {
     private init() {}
     
     func regist() {
+        
+        let config = NECallUIKitConfig()
+        config.appKey = ""
+        NERtcCallUIKit.sharedInstance().setup(with: config)
+        
         // 初始化 NIMSDK
         let options = NIMSDKOption()
         // 设置你的 AppKey，需要替换为你自己在云信平台申请的 AppKey
         options.appKey = "4727023efa991d31d61b3b32e819bd5b"
-        NIMSDK.shared().register(with: options)
+        let v2Options = V2NIMSDKOption()
+        v2Options.useV1Login = true
+        NIMSDK.shared().register(withOptionV2: options, v2Option: v2Options)
     }
     
     var conversationManager: NIMConversationManager {
@@ -134,11 +142,31 @@ final class NIMSDKManager {
     func sendVoiceMessage(path: String, sessionId: String, sessionType: Int, completion: ((Int) -> Void)? = nil) {
         let type = sessionType == 1 ? NIMSessionType.team : NIMSessionType.P2P
         let message = NIMMessage()
-        let messageObject = NIMVideoObject(sourcePath: path)
+        let messageObject = NIMAudioObject(sourcePath: path)
         message.messageObject = messageObject
         NIMSDK.shared().chatManager.send(message, to: NIMSession.init(sessionId, type: type)) { error in
             
         }
+    }
+    
+    //语音呼叫
+    func voiceCall(callee: String) {
+        
+        let param = NEUICallParam()
+        param.callType = .audio
+        param.remoteUserAccid = callee
+        NERtcCallUIKit.sharedInstance().call(with: param)
+
+    }
+    
+    //视频呼叫
+    func videoCall(callee: String) {
+        
+        let param = NEUICallParam()
+        param.callType = .video
+        param.remoteUserAccid = callee
+        NERtcCallUIKit.sharedInstance().call(with: param)
+
     }
     
 }

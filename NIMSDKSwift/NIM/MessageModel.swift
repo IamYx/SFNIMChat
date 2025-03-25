@@ -19,7 +19,7 @@ class MessageModel: NSObject {
     var messageId = ""
     var messageSendStatus = 0
     var senderName = ""
-    var voiceDuration = 0.0
+    var voiceDuration: Double = 0.0
     
     init(message: NIMMessage) {
         super.init()
@@ -94,6 +94,20 @@ class MessageModel: NSObject {
             self.imageUrl = imgObject.thumbPath ?? imgObject.thumbUrl ?? ""
             let a = imgObject.size.height / imgObject.size.width
             self.messageSize = CGSize(width: 180, height: 180 * (a > 0 ? a : 1))
+        }
+        
+        //语音消息
+        if (message.messageType == .audio) {
+            self.messageType = 2
+            let Object: NIMAudioObject = message.messageObject as! NIMAudioObject
+            self.imageUrl = Object.path ?? Object.url ?? ""
+            let divisor: Double = 1000.0
+            voiceDuration = Double(Object.duration) / divisor
+            
+            var width = 80
+            width = width + 10 * (Object.duration / 1000)
+            
+            self.messageSize = CGSize(width: width, height:40)
         }
         
     }

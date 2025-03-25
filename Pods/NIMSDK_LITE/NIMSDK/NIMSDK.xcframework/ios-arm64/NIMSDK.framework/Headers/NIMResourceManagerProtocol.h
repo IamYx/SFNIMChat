@@ -178,6 +178,27 @@ typedef void(^NIMFetchURLCompletion)(NSError * __nullable error, NSString * __nu
       completion:(NIMDownloadCompleteBlock)completion;
 
 /**
+ *  下载文件
+ *
+ *  @param urlString  下载的RL
+ *  @param filepath   下载路径
+ *  @param type       Fcs下载类型(特殊功能,开通请联系技术支持)
+ *  @param extraInfo  资源辅助信息
+ *  @param thumbWidth 缩略图宽度
+ *  @param thumbHeight 缩略图高度
+ *  @param progress   进度Block
+ *  @param completion 完成Block
+ */
+- (void)download:(NSString *)urlString
+        filepath:(NSString *)filepath
+            type:(NSInteger)type
+       extraInfo:(NIMResourceExtraInfo *)info
+      thumbWidth:(NSInteger)thumbWidth
+     thumbHeight:(NSInteger)thumbHeight
+        progress:(NIMHttpProgressBlock)progress
+      completion:(NIMDownloadCompleteBlock)completion;
+
+/**
  *  取消上传/下载任务
  *
  *  @param filepath 上传/下载任务对应的文件路径

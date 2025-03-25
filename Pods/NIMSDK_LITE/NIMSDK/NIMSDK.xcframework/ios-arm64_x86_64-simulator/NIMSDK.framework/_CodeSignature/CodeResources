@@ -4,6 +4,14 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>CMakeLists.txt</key>
+		<data>
+		yBIFy+Og+/bySBbCJgaeKi1kOQY=
+		</data>
+		<key>Headers/DataStructureConverter.h</key>
+		<data>
+		8tBLrVpb/7hUqyrqGbokuPdj8jc=
+		</data>
 		<key>Headers/NIMAIManagerProtocol.h</key>
 		<data>
 		0LLxE69gIkMNk5tqZqbRGodv7Oc=
@@ -198,7 +206,7 @@
 		</data>
 		<key>Headers/NIMGlobalDefs.h</key>
 		<data>
-		G0NyI48EeR5pTpM38HYaQQfhYPY=
+		XLl3buJAccAaUTN+aP9Uq81MqYk=
 		</data>
 		<key>Headers/NIMImageObject.h</key>
 		<data>
@@ -322,7 +330,7 @@
 		</data>
 		<key>Headers/NIMQChatApnsManagerProtocol.h</key>
 		<data>
-		fLz0/OTz6M418GG5+wK+9a3p0MI=
+		Vg9chmuYCo21mFlnDBN1unrHv/4=
 		</data>
 		<key>Headers/NIMQChatChannelManagerProtocol.h</key>
 		<data>
@@ -338,7 +346,7 @@
 		</data>
 		<key>Headers/NIMQChatMessageExtendManagerProtocol.h</key>
 		<data>
-		a/Ono4izoWCpxw28UhrVObsv004=
+		XMjJFj/0+pKk97mKc0p1w1fa8Do=
 		</data>
 		<key>Headers/NIMQChatMessageManagerProtocol.h</key>
 		<data>
@@ -382,7 +390,7 @@
 		</data>
 		<key>Headers/NIMResourceManagerProtocol.h</key>
 		<data>
-		Tq//E4Rexge1v1PSJ7I/5viNSQc=
+		zvmsJNZykE2OVX254A4HmIxPHDQ=
 		</data>
 		<key>Headers/NIMRevokeMessageNotification.h</key>
 		<data>
@@ -410,23 +418,23 @@
 		</data>
 		<key>Headers/NIMSDK.h</key>
 		<data>
-		UKfPUIicJLR9Cn50ezkGuXlyroA=
+		Gu9tBl8qz/c1hbCExDkdHGyYDTg=
 		</data>
 		<key>Headers/NIMSDKConfig.h</key>
 		<data>
-		JsdS2x2LBzk2h9RU7dyXD6ZYuAg=
+		kl4XYRffbZ51kGE+vOe79ph9ZVw=
 		</data>
 		<key>Headers/NIMSDKHeader.h</key>
 		<data>
-		ixXhIZQV+tyGe3I5HGEpRAc61j4=
+		659B0XKYy2oJJSq/v4QHZHdEqnM=
 		</data>
 		<key>Headers/NIMSDKOption.h</key>
 		<data>
-		DzOlmmDFk3OuY4qO+PPs0WXGg9g=
+		kye1w08fqLQHShLKsWLUOz5nHls=
 		</data>
 		<key>Headers/NIMServerSetting.h</key>
 		<data>
-		BVKCZXcex2QzTa/Kf64SLp4h9hg=
+		r4xsY5IG29UkJxWveu7w7PCuBew=
 		</data>
 		<key>Headers/NIMSession.h</key>
 		<data>
@@ -534,7 +542,7 @@
 		</data>
 		<key>Headers/NIMTeamMemberSearchOption.h</key>
 		<data>
-		msIvvSDXc72k01AmxFnk+kJxP5E=
+		wRkRMiQ///uC3jjICnLF6d7F1bU=
 		</data>
 		<key>Headers/NIMTeamMemberSearchResult.h</key>
 		<data>
@@ -588,9 +596,301 @@
 		<data>
 		bhXsUatV2fOppXtmdt/EinZVkz0=
 		</data>
+		<key>Headers/V2NIMAIServiceProtocol.h</key>
+		<data>
+		Vkp2C/ozLG/gtsCPPAhzSsbLg64=
+		</data>
+		<key>Headers/V2NIMAddCollectionParams.h</key>
+		<data>
+		An7cdQ0+EzJGEgCjjcN0NaJmRGA=
+		</data>
+		<key>Headers/V2NIMAntispamConfig.h</key>
+		<data>
+		kGSHNAqe/cqeam/+29p3UTiVzsw=
+		</data>
+		<key>Headers/V2NIMBase.h</key>
+		<data>
+		tMUNSADQcQAIQ1v6vDKK7chHU4c=
+		</data>
+		<key>Headers/V2NIMBaseConversation.h</key>
+		<data>
+		IRgpDGUG4unii7iz1PgSkvJqMZs=
+		</data>
+		<key>Headers/V2NIMBroadcastNotification.h</key>
+		<data>
+		OV0rMf0YKjxQ0vwPvpC+hitxjjk=
+		</data>
+		<key>Headers/V2NIMChatroomCdnTrackInfo.h</key>
+		<data>
+		nuZ1VWhSB6ycCgctr0dnhV4hnJk=
+		</data>
+		<key>Headers/V2NIMChatroomMessage.h</key>
+		<data>
+		QXucHkiUQc4RuWUWiZ0kXf6BptE=
+		</data>
+		<key>Headers/V2NIMChatroomMessageCreator.h</key>
+		<data>
+		sln4eg8UFr9ndA9d5YP0Xle9HbM=
+		</data>
+		<key>Headers/V2NIMChatroomServiceProtocol.h</key>
+		<data>
+		8j0LODH+yvFNscyhzLuztXk3aXI=
+		</data>
+		<key>Headers/V2NIMClearHistoryNotification.h</key>
+		<data>
+		zHw6MvZnNKqj1cQ5x14z382LuiU=
+		</data>
+		<key>Headers/V2NIMClientAntispamResult.h</key>
+		<data>
+		hh2NqvhZLJ6D+uxrLh84+9PQvlM=
+		</data>
+		<key>Headers/V2NIMClientAntispamUtil.h</key>
+		<data>
+		jrgGJQzKmGy35Mrp3D+jfzo6Da4=
+		</data>
+		<key>Headers/V2NIMCollection.h</key>
+		<data>
+		w7hkAf/8nPj4dW0r1FN4tzmZad0=
+		</data>
+		<key>Headers/V2NIMCollectionListResult.h</key>
+		<data>
+		KOyiBEldxJgIxEUYj7rMIKvTHxU=
+		</data>
+		<key>Headers/V2NIMCollectionOption.h</key>
+		<data>
+		tAmGFv3q+HoDWZf7NOpV6koSlX4=
+		</data>
+		<key>Headers/V2NIMConversationEnum.h</key>
+		<data>
+		q8QBhMnFHEbnXnGowpjiyVCOjE8=
+		</data>
+		<key>Headers/V2NIMConversationIdUtil.h</key>
+		<data>
+		1O0qV5SkIOHhqLPK0JM7a8ZlEZg=
+		</data>
+		<key>Headers/V2NIMConversationServiceProtocol.h</key>
+		<data>
+		T26LDmRNAKuQCozWGKT6acbA7xk=
+		</data>
+		<key>Headers/V2NIMCustomNotification.h</key>
+		<data>
+		t6VggMwJJOComAIZCnTosuB0DHI=
+		</data>
+		<key>Headers/V2NIMDownloadMessageAttachmentParams.h</key>
+		<data>
+		PBAbXeHiNwy3txYv9agkm9pzP6I=
+		</data>
+		<key>Headers/V2NIMError.h</key>
+		<data>
+		6mtG0Ark1DX2S9VxT+bYInIcJLI=
+		</data>
+		<key>Headers/V2NIMFriendServiceProtocol.h</key>
+		<data>
+		pD27R8u1YTdA9siymXG9YBxwXAA=
+		</data>
+		<key>Headers/V2NIMGetMediaResourceInfoResult.h</key>
+		<data>
+		9CNHOfw+/rwM2mlDBlGg9vxMmCI=
+		</data>
+		<key>Headers/V2NIMLastMessage.h</key>
+		<data>
+		4uEB9GRTza4NdM9sRmUySmc29GM=
+		</data>
+		<key>Headers/V2NIMLocalConversationServiceProtocol.h</key>
+		<data>
+		DRB9MsCCLqySariAVK22aP9A2lA=
+		</data>
+		<key>Headers/V2NIMLocationInfo.h</key>
+		<data>
+		2UpPhDq1FsAoU3p8qttR/spyTMw=
+		</data>
+		<key>Headers/V2NIMLoginServiceProtocol.h</key>
+		<data>
+		IYUsTIpmUsNCgG1vUX5uznd3pnQ=
+		</data>
+		<key>Headers/V2NIMMessage.h</key>
+		<data>
+		xXT4X1jnOUn9mAr532PyVkct6tg=
+		</data>
+		<key>Headers/V2NIMMessageAttachment.h</key>
+		<data>
+		35qPhcP923tXHw5eNtGwlUvcldI=
+		</data>
+		<key>Headers/V2NIMMessageAttachmentCreator.h</key>
+		<data>
+		YdanW/WIy//W073JXYxEZTUyzJQ=
+		</data>
+		<key>Headers/V2NIMMessageConverter.h</key>
+		<data>
+		PXDo83ET6Y7q2GvYSa8XM57/D9I=
+		</data>
+		<key>Headers/V2NIMMessageCreator.h</key>
+		<data>
+		ffJa35PeEuGSDqjn/RHDpGgLtpk=
+		</data>
+		<key>Headers/V2NIMMessageDeletedNotification.h</key>
+		<data>
+		OF12KT61NL/9uQ+UBYMcMrVlT0s=
+		</data>
+		<key>Headers/V2NIMMessageEnum.h</key>
+		<data>
+		3ysIbmAXVIEMBm3UIaA4G19j3/0=
+		</data>
+		<key>Headers/V2NIMMessagePin.h</key>
+		<data>
+		HqhW0NCESblGA633QP7koffpdBU=
+		</data>
+		<key>Headers/V2NIMMessagePinNotification.h</key>
+		<data>
+		8X/5RA4uIjC/clRtELPVc8o9N7k=
+		</data>
+		<key>Headers/V2NIMMessageQuickComment.h</key>
+		<data>
+		dFixoA9f4qdnQ4h/HRSCR8lAS2A=
+		</data>
+		<key>Headers/V2NIMMessageQuickCommentNotification.h</key>
+		<data>
+		wGMne7Vj/qa5Y3eoF+DuocnIJqM=
+		</data>
+		<key>Headers/V2NIMMessageQuickCommentPushConfig.h</key>
+		<data>
+		XH4lXFjzmRbMyGcxwpuaoM8+GfY=
+		</data>
+		<key>Headers/V2NIMMessageRefer.h</key>
+		<data>
+		OY5XLzkqHDkNvYO01+OM8V2c9MM=
+		</data>
+		<key>Headers/V2NIMMessageRevokeNotification.h</key>
+		<data>
+		qBIpkqSLFcmxQePB/8FHJiL9gZA=
+		</data>
+		<key>Headers/V2NIMMessageRevokeParams.h</key>
+		<data>
+		UCM8mS5ORYr0nadvvlC+UuPkC0A=
+		</data>
+		<key>Headers/V2NIMMessageSearchExParams.h</key>
+		<data>
+		LHI1SlI1x6i/P3ZJGOXWn1XdTUA=
+		</data>
+		<key>Headers/V2NIMMessageSearchParam.h</key>
+		<data>
+		kJsyg4KINovrqbgmivb0tA4hAcI=
+		</data>
+		<key>Headers/V2NIMMessageSearchParams.h</key>
+		<data>
+		nKQWIJhKRya8+wCP6qMI2EjRvp4=
+		</data>
+		<key>Headers/V2NIMMessageSearchResult.h</key>
+		<data>
+		fY6WfvTfV4X40LgCMT006So3Ies=
+		</data>
+		<key>Headers/V2NIMMessageServiceProtocol.h</key>
+		<data>
+		5dRMK8Vltr/gFQrU0HqtmgfGJ4A=
+		</data>
+		<key>Headers/V2NIMModifyMessageParams.h</key>
+		<data>
+		Ke6nH1HGIgSHwuauMQtuye+yni0=
+		</data>
+		<key>Headers/V2NIMModifyMessageResult.h</key>
+		<data>
+		H2Nsjtc6nrUWzLPIwvZ+GMihuYQ=
+		</data>
+		<key>Headers/V2NIMNotificationAntispamConfig.h</key>
+		<data>
+		1P71yCEkbR0AvU2CuDQDW3BE5ic=
+		</data>
+		<key>Headers/V2NIMNotificationConfig.h</key>
+		<data>
+		8nSiObv/pJY1K1MuNV5CHQeRXcI=
+		</data>
+		<key>Headers/V2NIMNotificationPushConfig.h</key>
+		<data>
+		YVgHz/jzonl7eiHGisg96OdwYLs=
+		</data>
+		<key>Headers/V2NIMNotificationRouteConfig.h</key>
+		<data>
+		4Ku5MQ5w9iSO1EmdGF6NcTZhUGE=
+		</data>
+		<key>Headers/V2NIMNotificationServiceProtocol.h</key>
+		<data>
+		5M4Vv14d+ZoCdQBis4lpeAzwhUo=
+		</data>
+		<key>Headers/V2NIMP2PMessageReadReceipt.h</key>
+		<data>
+		/ZQso6M/QrXz79bdcOlOnYEQWUE=
+		</data>
+		<key>Headers/V2NIMPassthroughServiceProtocol.h</key>
+		<data>
+		DSTSkK4TWelZywC7HgXr/0+p75s=
+		</data>
+		<key>Headers/V2NIMSDKOption.h</key>
+		<data>
+		T+iZop3a5gCwwnT0N1IRh6p4exU=
+		</data>
+		<key>Headers/V2NIMSendCustomNotificationParams.h</key>
+		<data>
+		5+Qr286ncluJXkJcLGMUoSjhtpk=
+		</data>
+		<key>Headers/V2NIMSettingServiceProtocol.h</key>
+		<data>
+		5GXUq8iKfpgNrOShZQ3vycanhpU=
+		</data>
+		<key>Headers/V2NIMSignallingRequest.h</key>
+		<data>
+		3cPTntJPvIDrfrj4jF/aMyQgEqE=
+		</data>
+		<key>Headers/V2NIMSignallingServiceProtocol.h</key>
+		<data>
+		Dj60wMEzOIRPuUwp3No6Nci+yUU=
+		</data>
+		<key>Headers/V2NIMSize.h</key>
+		<data>
+		ZXt6CiTtJQLEsxmS31gFakIm25o=
+		</data>
+		<key>Headers/V2NIMStorageServiceProtocol.h</key>
+		<data>
+		qZmQSwsDx/E9evhToPTuGpij2p4=
+		</data>
+		<key>Headers/V2NIMStorageUtil.h</key>
+		<data>
+		63YyadW+fyB90qj59ycUj+H7xD4=
+		</data>
+		<key>Headers/V2NIMSubscriptionServiceProtocol.h</key>
+		<data>
+		ODhuwBxW6esNuXGv/Q6i8tkWivU=
+		</data>
+		<key>Headers/V2NIMTeamMessageReadReceipt.h</key>
+		<data>
+		cMrztwDDNkjnAdUennloos1+a34=
+		</data>
+		<key>Headers/V2NIMTeamMessageReadReceiptDetail.h</key>
+		<data>
+		vNW6AIPzMIoKTyfopigVNkb90RI=
+		</data>
+		<key>Headers/V2NIMTeamServiceProtocol.h</key>
+		<data>
+		vDDneaHGOhJ92/W71ci90M748c8=
+		</data>
+		<key>Headers/V2NIMThreadMessageListOption.h</key>
+		<data>
+		mJkJwBkug1Pn3sZTNULNIABKwmo=
+		</data>
+		<key>Headers/V2NIMThreadMessageListResult.h</key>
+		<data>
+		vnV2nnD93eHNC1QVrxFx/CkA5+E=
+		</data>
+		<key>Headers/V2NIMUserServiceProtocol.h</key>
+		<data>
+		0iFZPFuyN2JAMXNTy5sTIR9V4MM=
+		</data>
+		<key>Headers/V2NIMVoiceToTextParams.h</key>
+		<data>
+		JoCciuSOtFZUqF+AdMOIXDvwSHE=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		lRINQVzuiyzk0e7f1bds0W2VzJ8=
+		m/dQv5M3vLPYpoBhymrOubS1KDo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -615,6 +915,28 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>CMakeLists.txt</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yBIFy+Og+/bySBbCJgaeKi1kOQY=
+			</data>
+			<key>hash2</key>
+			<data>
+			b76xMoiho2xAAy5OFlF46ppvkQ8HkJrjb9Puiq1x2iE=
+			</data>
+		</dict>
+		<key>Headers/DataStructureConverter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8tBLrVpb/7hUqyrqGbokuPdj8jc=
+			</data>
+			<key>hash2</key>
+			<data>
+			+Mert3am4ZLT2fLIOJk6KPhKKxwsDqVtTBy3rdNTwGE=
+			</data>
+		</dict>
 		<key>Headers/NIMAIManagerProtocol.h</key>
 		<dict>
 			<key>hash</key>
@@ -1147,11 +1469,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G0NyI48EeR5pTpM38HYaQQfhYPY=
+			XLl3buJAccAaUTN+aP9Uq81MqYk=
 			</data>
 			<key>hash2</key>
 			<data>
-			d8mVvpxG/Iigeu7pkze8LIKubAjie95FeJnD2becyMs=
+			J6M2LKy8mCA1sdl1P8AaHA+LAaZZJW5Bmf1EqRABKEo=
 			</data>
 		</dict>
 		<key>Headers/NIMImageObject.h</key>
@@ -1488,11 +1810,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fLz0/OTz6M418GG5+wK+9a3p0MI=
+			Vg9chmuYCo21mFlnDBN1unrHv/4=
 			</data>
 			<key>hash2</key>
 			<data>
-			hkrjO/ZBztlAqWZ8BCePxLmeo43PxKI9YLpuL8jkyNM=
+			vaEtYvshPDB+LVNJOtOefFWA0dY2Qp/Q798WpPhR0SA=
 			</data>
 		</dict>
 		<key>Headers/NIMQChatChannelManagerProtocol.h</key>
@@ -1532,11 +1854,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a/Ono4izoWCpxw28UhrVObsv004=
+			XMjJFj/0+pKk97mKc0p1w1fa8Do=
 			</data>
 			<key>hash2</key>
 			<data>
-			H4q4wa7pIUI/iYLI0lh3hBNUQHVQ2WJFtIqEWMMJMvo=
+			O0/1mJ5NXE/Hghff5o9+kr1fMjxpyORvKTzBMCn8d8k=
 			</data>
 		</dict>
 		<key>Headers/NIMQChatMessageManagerProtocol.h</key>
@@ -1653,11 +1975,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Tq//E4Rexge1v1PSJ7I/5viNSQc=
+			zvmsJNZykE2OVX254A4HmIxPHDQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			86nIxEPaVNBfHPGu/AZ8nULAlLDF84JCRYH++9xzrZs=
+			MAAWNMoc6oLdWKWVTR+/r5gwTiYVFiDkUs0mpR4V81M=
 			</data>
 		</dict>
 		<key>Headers/NIMRevokeMessageNotification.h</key>
@@ -1730,55 +2052,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UKfPUIicJLR9Cn50ezkGuXlyroA=
+			Gu9tBl8qz/c1hbCExDkdHGyYDTg=
 			</data>
 			<key>hash2</key>
 			<data>
-			5ZsFyioIIEMP26wgGxaM3E8/1uC/8aQEguEaY2INDgI=
+			L8y0uCUypWkZoc19yabn7DkdwTmE5DWV6g9dhgSwNCo=
 			</data>
 		</dict>
 		<key>Headers/NIMSDKConfig.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JsdS2x2LBzk2h9RU7dyXD6ZYuAg=
+			kl4XYRffbZ51kGE+vOe79ph9ZVw=
 			</data>
 			<key>hash2</key>
 			<data>
-			MNQefFgKRU55n652c4P+bcmntVWYgPuX+yrR9phVvmo=
+			2oATYcEGSjFek/mQSNi/Yhr4xf1TIqM6hYd+2ZUUlf4=
 			</data>
 		</dict>
 		<key>Headers/NIMSDKHeader.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ixXhIZQV+tyGe3I5HGEpRAc61j4=
+			659B0XKYy2oJJSq/v4QHZHdEqnM=
 			</data>
 			<key>hash2</key>
 			<data>
-			sG8j0eEXhaC9BGDu0vFWQdHTC9WLDDOCG9cUUeqyiz0=
+			HOrltBTEvcCippJyBJFIwM0eKwrkKYxXL4sXT6T0nPA=
 			</data>
 		</dict>
 		<key>Headers/NIMSDKOption.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DzOlmmDFk3OuY4qO+PPs0WXGg9g=
+			kye1w08fqLQHShLKsWLUOz5nHls=
 			</data>
 			<key>hash2</key>
 			<data>
-			EWsa2pK3qNfTaCx/t0RmV7lpHLVNbSItNzq9W79jDNU=
+			nsNtkAzYZPKax+BQ0T/YSzIGKEkmM5QLK5R0hAPSUIQ=
 			</data>
 		</dict>
 		<key>Headers/NIMServerSetting.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BVKCZXcex2QzTa/Kf64SLp4h9hg=
+			r4xsY5IG29UkJxWveu7w7PCuBew=
 			</data>
 			<key>hash2</key>
 			<data>
-			nAWQI0uLytxzJBzpBetbot2+mKib3Q0Cd89ZAgjIeZE=
+			XSmETGURDiMUo868IUENfniCpdBKBLWVaIO15Eu6or4=
 			</data>
 		</dict>
 		<key>Headers/NIMSession.h</key>
@@ -2071,11 +2393,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			msIvvSDXc72k01AmxFnk+kJxP5E=
+			wRkRMiQ///uC3jjICnLF6d7F1bU=
 			</data>
 			<key>hash2</key>
 			<data>
-			iuKmDelyoiSohTZYCKZU0qYV/K853mPX3VjB5PY0jGE=
+			OqqVHS/i0mkUU6eF0NnuVDNDFolKlTZ6serDUrvpyRQ=
 			</data>
 		</dict>
 		<key>Headers/NIMTeamMemberSearchResult.h</key>
@@ -2219,6 +2541,809 @@
 			<key>hash2</key>
 			<data>
 			IoVlQWlqddiFlO/dlVN7SIZCIF0KMW93yzDHCnSNS20=
+			</data>
+		</dict>
+		<key>Headers/V2NIMAIServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Vkp2C/ozLG/gtsCPPAhzSsbLg64=
+			</data>
+			<key>hash2</key>
+			<data>
+			yVyYfB03cE7og4SJBSZbUHmk1hI0q2H+WZyulCJ8iYM=
+			</data>
+		</dict>
+		<key>Headers/V2NIMAddCollectionParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			An7cdQ0+EzJGEgCjjcN0NaJmRGA=
+			</data>
+			<key>hash2</key>
+			<data>
+			DQrebezygf5T4gCtAylNd6Ihk7mX+vEoI4RUGreDPkA=
+			</data>
+		</dict>
+		<key>Headers/V2NIMAntispamConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kGSHNAqe/cqeam/+29p3UTiVzsw=
+			</data>
+			<key>hash2</key>
+			<data>
+			3pJeRU74AtVjEmQEx6m3LyCOzAcL1hJn15bINMLrtw4=
+			</data>
+		</dict>
+		<key>Headers/V2NIMBase.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tMUNSADQcQAIQ1v6vDKK7chHU4c=
+			</data>
+			<key>hash2</key>
+			<data>
+			8JUjvLNq5TPPoU3w8oMZt9xmwdR97EnUJr6Oc6DEyhs=
+			</data>
+		</dict>
+		<key>Headers/V2NIMBaseConversation.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IRgpDGUG4unii7iz1PgSkvJqMZs=
+			</data>
+			<key>hash2</key>
+			<data>
+			KxwRpjI8GVkzqjZGfYt5yOjH3h1+5rwnq2mRWzv+5HQ=
+			</data>
+		</dict>
+		<key>Headers/V2NIMBroadcastNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OV0rMf0YKjxQ0vwPvpC+hitxjjk=
+			</data>
+			<key>hash2</key>
+			<data>
+			1C4CC8fDPa1gfF+DUmu6WY55dKDJKSNGx1BUe+oor1I=
+			</data>
+		</dict>
+		<key>Headers/V2NIMChatroomCdnTrackInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nuZ1VWhSB6ycCgctr0dnhV4hnJk=
+			</data>
+			<key>hash2</key>
+			<data>
+			TxJAjYH+jYskb5xnZbAg+X0dStZNDL/iEmcIN6kPLGo=
+			</data>
+		</dict>
+		<key>Headers/V2NIMChatroomMessage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QXucHkiUQc4RuWUWiZ0kXf6BptE=
+			</data>
+			<key>hash2</key>
+			<data>
+			euQNq4sK7qrneyw58D9O1ASWKbgyiMlXUTkN+u7gl3c=
+			</data>
+		</dict>
+		<key>Headers/V2NIMChatroomMessageCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sln4eg8UFr9ndA9d5YP0Xle9HbM=
+			</data>
+			<key>hash2</key>
+			<data>
+			UgVMYaNl159wtoVA4naehpwlvaJ2AnovqIP1x9Sg83o=
+			</data>
+		</dict>
+		<key>Headers/V2NIMChatroomServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8j0LODH+yvFNscyhzLuztXk3aXI=
+			</data>
+			<key>hash2</key>
+			<data>
+			bNNijt4CuJgq3tRWyn1kIws13aYlW98SvEjWSvPlNVQ=
+			</data>
+		</dict>
+		<key>Headers/V2NIMClearHistoryNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zHw6MvZnNKqj1cQ5x14z382LuiU=
+			</data>
+			<key>hash2</key>
+			<data>
+			RX7OW54L7a+rmKuY/aBrZnK0/1/eGRZZnNPhwUfMKdA=
+			</data>
+		</dict>
+		<key>Headers/V2NIMClientAntispamResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hh2NqvhZLJ6D+uxrLh84+9PQvlM=
+			</data>
+			<key>hash2</key>
+			<data>
+			eHjk3J4/4ebVXie6V5AQBmTVcAXAZUS69qOV6ILbyNA=
+			</data>
+		</dict>
+		<key>Headers/V2NIMClientAntispamUtil.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jrgGJQzKmGy35Mrp3D+jfzo6Da4=
+			</data>
+			<key>hash2</key>
+			<data>
+			wnqftHD4BGbFxLcWtiAS+iENMB5JtfKK+bd8oOvljSA=
+			</data>
+		</dict>
+		<key>Headers/V2NIMCollection.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w7hkAf/8nPj4dW0r1FN4tzmZad0=
+			</data>
+			<key>hash2</key>
+			<data>
+			7vS9Xz2/odoeHGb2SbzTO2pue/vXcY65vjuI7J1kTCo=
+			</data>
+		</dict>
+		<key>Headers/V2NIMCollectionListResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KOyiBEldxJgIxEUYj7rMIKvTHxU=
+			</data>
+			<key>hash2</key>
+			<data>
+			wOY/fjQ1xqTwgCh4XX8FjG2PHlqdFmIMfWgrHfhtP10=
+			</data>
+		</dict>
+		<key>Headers/V2NIMCollectionOption.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tAmGFv3q+HoDWZf7NOpV6koSlX4=
+			</data>
+			<key>hash2</key>
+			<data>
+			Qe5/37vMJzlu2Y6x7acBmFgCBLvd/gLvGWA64Wt3H2s=
+			</data>
+		</dict>
+		<key>Headers/V2NIMConversationEnum.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			q8QBhMnFHEbnXnGowpjiyVCOjE8=
+			</data>
+			<key>hash2</key>
+			<data>
+			uT9YcIOASXv0L0jv6cr6bO/j2t2sbDd7D+3W3K6b2EI=
+			</data>
+		</dict>
+		<key>Headers/V2NIMConversationIdUtil.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1O0qV5SkIOHhqLPK0JM7a8ZlEZg=
+			</data>
+			<key>hash2</key>
+			<data>
+			SdcdyRu9C0g/m80n3+by1ICb1E59crUDxjGFMnqie2c=
+			</data>
+		</dict>
+		<key>Headers/V2NIMConversationServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T26LDmRNAKuQCozWGKT6acbA7xk=
+			</data>
+			<key>hash2</key>
+			<data>
+			6NlWtah9+q50McNTprhrGzqwHXBjWrFaF0TF57+nhOs=
+			</data>
+		</dict>
+		<key>Headers/V2NIMCustomNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t6VggMwJJOComAIZCnTosuB0DHI=
+			</data>
+			<key>hash2</key>
+			<data>
+			i8x8ESZTYxKIGjx7143G7ze2htr5Zr1U7tY6jQc3C10=
+			</data>
+		</dict>
+		<key>Headers/V2NIMDownloadMessageAttachmentParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PBAbXeHiNwy3txYv9agkm9pzP6I=
+			</data>
+			<key>hash2</key>
+			<data>
+			itM4ab5i1Rlr93x/EjIcGPnBGHbNHQgVNclXP+cFfh4=
+			</data>
+		</dict>
+		<key>Headers/V2NIMError.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6mtG0Ark1DX2S9VxT+bYInIcJLI=
+			</data>
+			<key>hash2</key>
+			<data>
+			uvplWBQQsfc2BwysaFHZc7qXlwBlmMGGybjzJHNv/hc=
+			</data>
+		</dict>
+		<key>Headers/V2NIMFriendServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pD27R8u1YTdA9siymXG9YBxwXAA=
+			</data>
+			<key>hash2</key>
+			<data>
+			RTxctlgSHPeSCJ2S532k7Mx3a1EhwN2n5AJc6FXpVy4=
+			</data>
+		</dict>
+		<key>Headers/V2NIMGetMediaResourceInfoResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9CNHOfw+/rwM2mlDBlGg9vxMmCI=
+			</data>
+			<key>hash2</key>
+			<data>
+			86rt/eQL9f296kiR1Q2VoK9Zpxq+FqDBuT8xc4nMcyw=
+			</data>
+		</dict>
+		<key>Headers/V2NIMLastMessage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4uEB9GRTza4NdM9sRmUySmc29GM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ANaYrReFxTJguENSlYhz0T7SZ/nrXKDbElukKNcXTQg=
+			</data>
+		</dict>
+		<key>Headers/V2NIMLocalConversationServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DRB9MsCCLqySariAVK22aP9A2lA=
+			</data>
+			<key>hash2</key>
+			<data>
+			7rOngOpDxGjGiKDZPMUAP8cOpN8H+01knY23SoZ5j5Y=
+			</data>
+		</dict>
+		<key>Headers/V2NIMLocationInfo.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2UpPhDq1FsAoU3p8qttR/spyTMw=
+			</data>
+			<key>hash2</key>
+			<data>
+			NSj2TBFf1dfdmGMBY7Ppv9P/aN1pE7rd0YvIL2x6BSY=
+			</data>
+		</dict>
+		<key>Headers/V2NIMLoginServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IYUsTIpmUsNCgG1vUX5uznd3pnQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			SzCDp93EDwkut0PvdZ2MDxUlKfsvcCj3Plvqdj7Q43o=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessage.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xXT4X1jnOUn9mAr532PyVkct6tg=
+			</data>
+			<key>hash2</key>
+			<data>
+			okyI7nNtFb0Jg4irwdQahFT0KjNlRhUkGwfzzYHKPj8=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageAttachment.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			35qPhcP923tXHw5eNtGwlUvcldI=
+			</data>
+			<key>hash2</key>
+			<data>
+			KrMPUvnSs7WWXkTdTT+Ram1X8N6YnEhA9m9qDf57bDE=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageAttachmentCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YdanW/WIy//W073JXYxEZTUyzJQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			1nXpH7G8wa/m41M1P3MmAjMCuKiZQ9hY9zLiHzxFDWw=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageConverter.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PXDo83ET6Y7q2GvYSa8XM57/D9I=
+			</data>
+			<key>hash2</key>
+			<data>
+			K4g7XzjWug1FguuTyGKv5uPLnTNGnY8dfJ4Pt8r+2Fk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageCreator.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ffJa35PeEuGSDqjn/RHDpGgLtpk=
+			</data>
+			<key>hash2</key>
+			<data>
+			CC4VVinOM3JOwgn2afD3g1v+hdACmU0/Bj1xeqD29jA=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageDeletedNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OF12KT61NL/9uQ+UBYMcMrVlT0s=
+			</data>
+			<key>hash2</key>
+			<data>
+			ixMo2jZnZgbvxJQMS5UAX3e93Pt9+/Lr0LvPUx78TKY=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageEnum.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3ysIbmAXVIEMBm3UIaA4G19j3/0=
+			</data>
+			<key>hash2</key>
+			<data>
+			HvCWJHzESP9RIrCHrxZhuY5oMdDEX+3pcMoPj1HNFIk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessagePin.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HqhW0NCESblGA633QP7koffpdBU=
+			</data>
+			<key>hash2</key>
+			<data>
+			5mzzVd/AEABKMhrKcU1S8brEZH4J3QC7luMokCMc7sQ=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessagePinNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8X/5RA4uIjC/clRtELPVc8o9N7k=
+			</data>
+			<key>hash2</key>
+			<data>
+			jgOa4av8M1TGVXkm0lEzdLHk1862eD33ploVeFZ+sBE=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageQuickComment.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dFixoA9f4qdnQ4h/HRSCR8lAS2A=
+			</data>
+			<key>hash2</key>
+			<data>
+			Xa4Ck+nUnuUe0h6XJij1hMHNDCxsYVxuxZv4kzQIN6M=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageQuickCommentNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wGMne7Vj/qa5Y3eoF+DuocnIJqM=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ca90nSQr3rY2cdWlzqXCfJNvd45S3hRI7h2orSvnyOc=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageQuickCommentPushConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XH4lXFjzmRbMyGcxwpuaoM8+GfY=
+			</data>
+			<key>hash2</key>
+			<data>
+			s2dPwEemEYYkCH3p4KsneZky2grM1J17WoA9kHnjChE=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageRefer.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OY5XLzkqHDkNvYO01+OM8V2c9MM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZjoUKPpqYjiF27j3JFF7PDGC8eBTikOKj+JVWTSy0uw=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageRevokeNotification.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qBIpkqSLFcmxQePB/8FHJiL9gZA=
+			</data>
+			<key>hash2</key>
+			<data>
+			OTYepR3pTKgN9eBpfpB1qxW9HnqjIWNQmprB5N6v8X4=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageRevokeParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UCM8mS5ORYr0nadvvlC+UuPkC0A=
+			</data>
+			<key>hash2</key>
+			<data>
+			QAfJ2w9VZu+wCxUg9araPVwW5IlyBIhfkbglyQ4dfXk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageSearchExParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			LHI1SlI1x6i/P3ZJGOXWn1XdTUA=
+			</data>
+			<key>hash2</key>
+			<data>
+			wuuUhTeDrpuI3GteSK+fdz/p30c6I7ANBSuo+kI1kGQ=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageSearchParam.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kJsyg4KINovrqbgmivb0tA4hAcI=
+			</data>
+			<key>hash2</key>
+			<data>
+			AcuWYTyDQ8irM5HVQ1PiFNxw33cZzSKlB+DeQwNYuQE=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageSearchParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nKQWIJhKRya8+wCP6qMI2EjRvp4=
+			</data>
+			<key>hash2</key>
+			<data>
+			XXwjyNyYWluv/p0r9HcF0vGUZIxJzkn1XAMrVMwQ3LY=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageSearchResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fY6WfvTfV4X40LgCMT006So3Ies=
+			</data>
+			<key>hash2</key>
+			<data>
+			Hc+xfebewEU6iLwCCwLXDf9lHrHW1jBdlw0Rw9ssIuY=
+			</data>
+		</dict>
+		<key>Headers/V2NIMMessageServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5dRMK8Vltr/gFQrU0HqtmgfGJ4A=
+			</data>
+			<key>hash2</key>
+			<data>
+			SfnscdqvduxC005fPs7mXhKUwKWpFqbA5qpU8yEcunU=
+			</data>
+		</dict>
+		<key>Headers/V2NIMModifyMessageParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ke6nH1HGIgSHwuauMQtuye+yni0=
+			</data>
+			<key>hash2</key>
+			<data>
+			oP98BhH4gdBP5/PfaodJUsjm6zmrjEtsKkOYD2EmmbE=
+			</data>
+		</dict>
+		<key>Headers/V2NIMModifyMessageResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H2Nsjtc6nrUWzLPIwvZ+GMihuYQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			qO2N9vE3VjiNkalYkmM033zgrTGwcJUxVV6muft48Mw=
+			</data>
+		</dict>
+		<key>Headers/V2NIMNotificationAntispamConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1P71yCEkbR0AvU2CuDQDW3BE5ic=
+			</data>
+			<key>hash2</key>
+			<data>
+			v88t5i7x63DIj9q6O1pIwRIWzjl0dbhxGUhewA6tFYI=
+			</data>
+		</dict>
+		<key>Headers/V2NIMNotificationConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8nSiObv/pJY1K1MuNV5CHQeRXcI=
+			</data>
+			<key>hash2</key>
+			<data>
+			5l0cvOzqjeRLz1X/KnuvjCMzZNOTxTzC7QMQEs9YjBc=
+			</data>
+		</dict>
+		<key>Headers/V2NIMNotificationPushConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YVgHz/jzonl7eiHGisg96OdwYLs=
+			</data>
+			<key>hash2</key>
+			<data>
+			d+WLC3x5np3MpoqceFtDS3qLn9ONjT0bPKm46lR+FFc=
+			</data>
+		</dict>
+		<key>Headers/V2NIMNotificationRouteConfig.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4Ku5MQ5w9iSO1EmdGF6NcTZhUGE=
+			</data>
+			<key>hash2</key>
+			<data>
+			G62Y3iaPGJN9WAS3dTN6jMiahQug2jw3EDEeeJSTAOI=
+			</data>
+		</dict>
+		<key>Headers/V2NIMNotificationServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5M4Vv14d+ZoCdQBis4lpeAzwhUo=
+			</data>
+			<key>hash2</key>
+			<data>
+			rWg4rTOX94G9eciAd8Ubets4ARedWELeDeuTK1iN4cs=
+			</data>
+		</dict>
+		<key>Headers/V2NIMP2PMessageReadReceipt.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/ZQso6M/QrXz79bdcOlOnYEQWUE=
+			</data>
+			<key>hash2</key>
+			<data>
+			XYoaaxK+y0wp4hYH2/nVx/B7Bb0ypl8SXIlhK7Iwtqw=
+			</data>
+		</dict>
+		<key>Headers/V2NIMPassthroughServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DSTSkK4TWelZywC7HgXr/0+p75s=
+			</data>
+			<key>hash2</key>
+			<data>
+			9125mtSYlOU0cUadVTh1pFVI5Cmw2q6x/9SXbyRR5GU=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSDKOption.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			T+iZop3a5gCwwnT0N1IRh6p4exU=
+			</data>
+			<key>hash2</key>
+			<data>
+			jN3KAW/qhAYX6WbcmtZ3nRaHz5+mecoLVt4gg8+zuZk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSendCustomNotificationParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5+Qr286ncluJXkJcLGMUoSjhtpk=
+			</data>
+			<key>hash2</key>
+			<data>
+			mSS+KeLunkBVnAxsx5ud6uZENfCGhiXUNjqG5/A/7uc=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSettingServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5GXUq8iKfpgNrOShZQ3vycanhpU=
+			</data>
+			<key>hash2</key>
+			<data>
+			8SAIcmv9DOd1p4XeLcD0QyvRTwJPnMDDXMHZcVAVxBE=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSignallingRequest.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3cPTntJPvIDrfrj4jF/aMyQgEqE=
+			</data>
+			<key>hash2</key>
+			<data>
+			WQIyWJvW5uXoTqNpWjSKwZbC/kjZaH1sAV866bJtWIk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSignallingServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dj60wMEzOIRPuUwp3No6Nci+yUU=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZPdv4zwL3/BihG6rj/xtYKoVut/z4Br7IVkTVUcysfk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSize.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZXt6CiTtJQLEsxmS31gFakIm25o=
+			</data>
+			<key>hash2</key>
+			<data>
+			x166NM/ly/hjCNDsf4HPKnyDY4f1DJlzNoh2UCUmLK8=
+			</data>
+		</dict>
+		<key>Headers/V2NIMStorageServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qZmQSwsDx/E9evhToPTuGpij2p4=
+			</data>
+			<key>hash2</key>
+			<data>
+			m0x3ItgefNdH+UmxHYpG2cT082wGyUpHN0SPrtZ3n0w=
+			</data>
+		</dict>
+		<key>Headers/V2NIMStorageUtil.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			63YyadW+fyB90qj59ycUj+H7xD4=
+			</data>
+			<key>hash2</key>
+			<data>
+			H23kbU5wOFRp5lgE/VqyzzV1bslrfzH3embv7yCNmR8=
+			</data>
+		</dict>
+		<key>Headers/V2NIMSubscriptionServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ODhuwBxW6esNuXGv/Q6i8tkWivU=
+			</data>
+			<key>hash2</key>
+			<data>
+			pwJbi5bxySqqc2ikelXdoXa1SS6Tc4QE9gR3ThfD4tM=
+			</data>
+		</dict>
+		<key>Headers/V2NIMTeamMessageReadReceipt.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cMrztwDDNkjnAdUennloos1+a34=
+			</data>
+			<key>hash2</key>
+			<data>
+			FRSCcsSe2CkY1Hrvku0GcUeiRe5nDByHY1ZL+sqV47I=
+			</data>
+		</dict>
+		<key>Headers/V2NIMTeamMessageReadReceiptDetail.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vNW6AIPzMIoKTyfopigVNkb90RI=
+			</data>
+			<key>hash2</key>
+			<data>
+			R4DvgMFzemYwNWYsEJnc3FCilexJ5uWXXkVl6sjjJDk=
+			</data>
+		</dict>
+		<key>Headers/V2NIMTeamServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vDDneaHGOhJ92/W71ci90M748c8=
+			</data>
+			<key>hash2</key>
+			<data>
+			5V6tQpl9GIWmWq9Y7P9pjpbtTgGKA4iBUPxBNUgxggs=
+			</data>
+		</dict>
+		<key>Headers/V2NIMThreadMessageListOption.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mJkJwBkug1Pn3sZTNULNIABKwmo=
+			</data>
+			<key>hash2</key>
+			<data>
+			hkcyBHwSDxF50qNiInRLgAXxa8HwostC+/68AvO/2F0=
+			</data>
+		</dict>
+		<key>Headers/V2NIMThreadMessageListResult.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vnV2nnD93eHNC1QVrxFx/CkA5+E=
+			</data>
+			<key>hash2</key>
+			<data>
+			35Cyea1vaajGRxgOOm9hXvR0AURKbiGw2RLUbJENtZo=
+			</data>
+		</dict>
+		<key>Headers/V2NIMUserServiceProtocol.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0iFZPFuyN2JAMXNTy5sTIR9V4MM=
+			</data>
+			<key>hash2</key>
+			<data>
+			kPWM30tV2lTo5cwRWB4vVNHNnXa/vImZ8Krf+Qpc39w=
+			</data>
+		</dict>
+		<key>Headers/V2NIMVoiceToTextParams.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JoCciuSOtFZUqF+AdMOIXDvwSHE=
+			</data>
+			<key>hash2</key>
+			<data>
+			6VVahxSvxn76KeZGeA2UD6jxByTJ/7eL3xT950KpvYk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

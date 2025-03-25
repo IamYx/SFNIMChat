@@ -1,4 +1,5 @@
 import AVFoundation
+import UIKit
 
 class VoiceRecordManager {
     // 状态回调闭包
@@ -38,7 +39,7 @@ class VoiceRecordManager {
     }
     
     // MARK: - 公共方法
-    func handleLongPress(_ gesture: UILongPressGestureRecognizer) {
+    @objc func handleLongPress(_ gesture: UILongPressGestureRecognizer) {
         switch gesture.state {
         case .began:
             startRecording()

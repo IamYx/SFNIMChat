@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 @class NIMQChatOption;
 @class NIMServerSetting;
 
+@class V2NIMSDKOption;
+
+@protocol NIMCustomizedAPIManager;
+@protocol V2NIMAIService;
+
 /**
  *  压缩日志回调
  *
@@ -35,7 +40,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
  *  IM 所有业务均通过 NIM SDK 单例进行调用。
  *  @par 注意事项：
  *  虽然所有的云信接口都是线程安全的，但为了防范于未然，推荐您在且只在主线程调用该接口。
- *  @par 返回： 
+ *  @par 返回：
  *  NIM SDK: 实例
  */
 + (instancetype)sharedSDK;
@@ -43,7 +48,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 /**
  *  获取当前 SDK 版本号。
  *
- *  @par 返回： 
+ *  @par 返回：
  *  当前 SDK 版本号，如 "1.0.0"
  */
 - (NSString *)sdkVersion;
@@ -64,7 +69,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
  *  <tr><td>appKey</td><td>对应云信控制台应用的 AppKey，应用的唯一标识。使用相同 App Key 、不同 Bundle Id 的应用，消息仍可以互通</td></tr>
  *  <tr><td>cerName</td><td>对应云信控制台配置的推送证书名称，不超过 32 个字符，否则登录时会报 500 错误</td></tr>
  *  </table>
- *  
+ *
  */
 - (void)registerWithAppID:(NSString *)appKey
                   cerName:(nullable NSString *)cerName;
@@ -80,12 +85,32 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 - (void)registerWithOption:(NIMSDKOption *)option;
 
 /**
+ *  V2 初始化 SDK，初始化时，可同时注册 APNs 推送证书名称和 PushKit 推送证书名称。<br>
+ *  @par 调用时机：
+ *  建议在应用启动时初始化 NIM SDK。
+ *  @par 参数说明：
+ *  option：初始化的配置项，包括应用的 AppKey 、APNs 推送证书名称和 PushKit 推送证书名称
+ *  @par 参数说明：
+ *  v2Option：v2初始化的配置项
+ */
+- (void)registerWithOptionV2:(NIMSDKOption *)option
+                    v2Option:(nullable V2NIMSDKOption *)v2Option;
+
+/**
  *  获取 AppKey。
  *
- *  @par 返回： 
+ *  @par 返回：
  *  当前注册应用的 AppKey
  */
 - (nullable NSString *)appKey;
+
+/**
+ * 更新 SDK 的 AppKey
+ * 当IM处于未登录状态，且所有聊天室实例全部销毁，且appkey不为null或空串时更新成功，否则更新失败
+ * @param appKey
+ * @return V2NIMError 错误码， 错误码表示200成功，其他失败
+ */
+- (V2NIMError *)updateAppKey:(nonnull NSString *)appKey;
 
 
 /**
@@ -107,7 +132,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 /**
  *  上传/更新 DeviceToken 至云信服务器，用于后续的 APNs 推送。若需要同时设置自定义推送文案，请使用 [updateApnsToken:customContentKey:](https://doc.yunxin.163.com/docs/interface/messaging/iOS/doxygen/Latest/zh/de/de3/interface_n_i_m_s_d_k.html#ab84b0a2d91225c8b10de070205fd9d2a)
        customContentKey:(nullable NSString *)key;
- *  @par 参数说明： 
+ *  @par 参数说明：
  *  token：当前设备的 DeviceToken
  *  @par 返回：
  *  格式化后的 DeviceToken
@@ -159,7 +184,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
  *  获得 SDK 当前的 log 文件路径。
  *  @par 注意事项：
  *  SDK 每天会生成一个 log 文件，方便开发者定位和反馈问题。
- *  @par 返回： 
+ *  @par 返回：
  *  SDK 当前的 log 文件路径（当前生成的最新的 log 文件路径）
  */
 - (NSString *)currentLogFilepath;
@@ -168,7 +193,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 /**
  *  打包当前所有的 log 文件，调用该接口后，SDK 将压缩当前所有的日志为 Zip 文件，并输出 Zip 路径，上层可以根据该文件进行上传反馈。
  *
- *  @par 参数说明： 
+ *  @par 参数说明：
  *  completion：压缩日志的回调，回调信息包含 error（执行结果，如果成功将返回 nil）和 path（压缩包的路径，只有当执行成功才有值，否则将返回 nil）
  */
 - (void)archiveLogs:(NIMArchiveLogsHandler)completion;
@@ -176,7 +201,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 /**
  *  打包并上传当前所有的 log 文件，调用该接口后，SDK 将压缩当前所有的日志为 Zip 文件，输出 Zip 路径并上传，上层可以根据该文件进行上传反馈。
  *
- *  @par 参数说明： 
+ *  @par 参数说明：
  *  completion：打包并上传日志的回调，回调信息包含 error（执行结果，如果成功将返回 nil）和 path（压缩包的路径，只有当执行成功才有值，否则将返回 nil）
  */
 - (void)uploadLogs:(NIMUploadLogsHandler _Nullable)completion;
@@ -186,7 +211,7 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
  *
  *  @par 参数说明：
  *  <table>
- *  <tr><th>参数名称</th><th>描述</th></tr> 
+ *  <tr><th>参数名称</th><th>描述</th></tr>
  *  <tr><td>attach</td><td>附言，可为空</td></tr>
  *  <tr><td>roomId</td><td>目标聊天室 ID，可为空</td></tr>
  *  <tr><td>completion</td><td>打包并上传日志的回调，回调信息包含 error 和 path<br>error ：执行结果，如果成功将返回 nil<br>path ：压缩包的路径，只有当执行成功才有值，否则将返回 nil</td></tr>
@@ -216,8 +241,8 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
 /**
  *  资源场景配置
  *  @discussion nos 预设场景和自定义场景规则
- *  可以覆盖设置，如果预设场景不设置，为系统默认设置
- *  sceneDict key-value，系统默认预设场景为3种，自定义场景数量不超过10种
+ *  如果预设场景不设置，为系统默认设置
+ *  sceneDict key-value，系统默认预设场景为4种，自定义场景数量不超过10种
  *  key 是场景，nsstring类型；value 是资源存活时间，nsnumber类型，精确到天，0为永久存活
  *  例如：@{@"nim_icon":@0,@"nim_msg":@0,@"nim_system":@0,@"nim_custom":@30}
  */
@@ -384,6 +409,22 @@ typedef void(^NIMUploadLogsHandler)(NSError *error, NSString *path);
  */
 @property (nonatomic,strong,readonly)   id<NIMAIManager> aiManager;
 
+@property (nonatomic,strong,readonly)   id<V2NIMLoginService> v2LoginService;
+@property (nonatomic,strong,readonly)   id<V2NIMMessageService> v2MessageService;
+@property (nonatomic,strong,readonly)   id<V2NIMStorageService> v2StorageService;
+@property (nonatomic,strong,readonly)   id<V2NIMNotificationService> v2NotificationService;
+@property (nonatomic,strong,readonly)   id<V2NIMConversationService> v2ConversationService;
+@property (nonatomic,strong,readonly)   id<V2NIMConversationGroupService> v2ConversationGroupService;
+@property (nonatomic,strong,readonly)   id<V2NIMTeamService> v2TeamService;
+@property (nonatomic,strong,readonly)   id<V2NIMSettingService> v2SettingService;
+@property (nonatomic,strong,readonly)   id<V2NIMNotificationService> V2NIMNotificationService;
+@property (nonatomic,strong,readonly)   id<V2NIMUserService> v2UserService;
+@property (nonatomic,strong,readonly)   id<V2NIMFriendService> v2FriendService;
+@property (nonatomic,strong,readonly)   id<V2NIMAIService> v2AIService;
+@property (nonatomic,strong,readonly)   id<V2NIMSignallingService> v2SignallingService;
+@property (nonatomic,strong,readonly)   id<V2NIMSubscriptionService> v2SubscriptionService;
+@property (nonatomic,strong,readonly)   id<V2NIMPassthroughService> v2PassthroughService;
+@property (nonatomic,strong,readonly)   id<V2NIMLocalConversationService> v2LocalConversationService;
 @end
 
 NS_ASSUME_NONNULL_END

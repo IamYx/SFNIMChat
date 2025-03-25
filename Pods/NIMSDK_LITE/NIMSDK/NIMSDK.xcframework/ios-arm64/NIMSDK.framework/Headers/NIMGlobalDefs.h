@@ -16,6 +16,10 @@
  */
 typedef NS_ENUM(NSInteger, NIMMessageType){
     /**
+     * 未知，不合法
+     */
+    NIMMessageTypeInvalid  = -1,
+    /**
      *  文本类型消息
      */
     NIMMessageTypeText          = 0,
@@ -195,12 +199,12 @@ typedef NS_ENUM(NSInteger, NIMLocalErrorCode) {
      *  功能不支持
      */
     NIMLocalErrorCodeNotSupported = 24,
-
+    
     /**
      *  未知问题
      */
     NIMLocalErrorCodeUnknownError = 25,
-
+    
     /**
      *  保存文件失败
      */
@@ -213,6 +217,16 @@ typedef NS_ENUM(NSInteger, NIMLocalErrorCode) {
      *   和设置冲突
      */
     NIMLocalErrorCodeSettingConflictError = 28,
+    
+    /**
+     *   错误使用
+     */
+    NIMLocalErrorCodeMisuse = 29,
+    
+    /**
+     *  资源不存在
+     */
+    NIMLocalErrorCodeResourceNotExist = 30,
 };
 
 

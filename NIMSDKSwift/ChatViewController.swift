@@ -25,6 +25,7 @@ class ChatViewController: UIViewController {
         let tv = UITableView()
         tv.register(TextMessageCellTableViewCell.self, forCellReuseIdentifier: "MessageCell")
         tv.register(ImageMessageCellTableViewCell.self, forCellReuseIdentifier: "ImgMessageCell")
+        tv.register(VoiceMessageCellTableViewCell.self, forCellReuseIdentifier: "VoiceMessageCell")
         tv.separatorStyle = .none
         tv.allowsSelection = true
         tv.dataSource = self
@@ -304,7 +305,9 @@ class ChatViewController: UIViewController {
             guard let url = url else { return }
             print("录音文件路径: \(url.path)")
             // 调用发送方法：NIMSDKManager.shared.sendVoiceMessage(path: url.path, ...)
+            NIMSDKManager.shared.sendVoiceMessage(path: url.path, sessionId: self?.model.conversationId ?? "", sessionType: self?.model.conversationType ?? 0)
         }
+        sendVoice()
     }
     
     @objc private func sendVoice() {
@@ -314,15 +317,11 @@ class ChatViewController: UIViewController {
     }
 
     @objc private func videoCall() {
-        let alert = UIAlertController(title: "视频通话", message: "即将发起视频通话", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "确定", style: .default))
-        present(alert, animated: true)
+        NIMSDKManager.shared.videoCall(callee: model.conversationId)
     }
 
     @objc private func voiceCall() {
-        let alert = UIAlertController(title: "语音通话", message: "即将发起语音通话", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "确定", style: .default))
-        present(alert, animated: true)
+        NIMSDKManager.shared.voiceCall(callee: self.model.conversationId)
     }
 
 }
@@ -355,6 +354,8 @@ extension ChatViewController: UITableViewDataSource {
             cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! TextMessageCellTableViewCell
         } else if (model.messageType == 1) {
             cell = tableView.dequeueReusableCell(withIdentifier: "ImgMessageCell", for: indexPath) as! ImageMessageCellTableViewCell
+        } else if (model.messageType == 2) {
+            cell = tableView.dequeueReusableCell(withIdentifier: "VoiceMessageCell", for: indexPath) as! VoiceMessageCellTableViewCell
         } else {
             cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath) as! TextMessageCellTableViewCell
         }
